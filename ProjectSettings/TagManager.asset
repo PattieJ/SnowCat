@@ -41,6 +41,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: deepGround
+    uniqueID: 2551257055
+    locked: 0
+  - name: Cave
+    uniqueID: 3014286399
+    locked: 0
+  - name: Cliff
+    uniqueID: 4227222671
+    locked: 0
+  - name: Plants
+    uniqueID: 4256695363
+    locked: 0
+  - name: Water
+    uniqueID: 1041973283
+    locked: 0
+  - name: Bridge
+    uniqueID: 2002915795
+    locked: 0
   - name: Player
     uniqueID: 2058998429
     locked: 0

@@ -14,4 +14,11 @@
 ## 相关实现
 
 1. WASD 或 上下左右 移动角色并切换状态
+
 2. 摄像头跟随角色移动，并有平滑效果
+
+3. 基本场景搭建
+
+   First day scene（粗糙版）
+
+   <img src=".\Reports\readmeAsserts\firstDayScene.png" alt="image-20231215205641380" style="zoom:50%;" />

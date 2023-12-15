@@ -2,6 +2,10 @@
 
 ## 0. 图片切割
 
+##### 宏定义
+
++ Pixels Per Unit = 16
+
 1. 修改 `spirit Mode` 为 `Multiple`
 2. `Filter Mode` 修改为 `Point`
 3. `Compression` 修改为 `None`
@@ -112,3 +116,25 @@ PlanB:
 + `float smooth` 数值(间断值）； `vector3.lerp()`差值计算
 
   Z轴需要特别处理，不能直接全用position进行差值计算。将角色的Z轴
+
+## 3. 场景绘画
+
+1. 创建画板
+
+   <img src=".\reportsAsserts\createPalatte.png" alt="image-20231215191619710" style="zoom:50%;" />
+
+2. 新建tilemap
+
+   （第一次创建的话，不需要右键Grid）右键`Grid`，选择 `2D object`，选择 `Tilemap`，选择 `Rectangular`
+
+   <img src=".\reportsAsserts\createTilemap.png" alt="image-20231215192220317" style="zoom:50%;" />
+
+   
+
+3. 将图片添加到调色板中：按住切割好的图片，拖动到 `Tile Palette `中
+
+   <img src=".\reportsAsserts\addtiles.png" alt="image-20231215180917241" style="zoom:50%;" />
+
+4. 在`Ground` 上 画 `Plants`，新建layer Plants，并调整顺序即可
+
+   <img src=".\reportsAsserts\tilemapPlants.png" alt="image-20231215195221983" />
