@@ -117,7 +117,7 @@ PlanB:
 
   Z轴需要特别处理，不能直接全用position进行差值计算。将角色的Z轴
 
-## 3. 场景绘画
+## 3. 第一个场景绘画
 
 1. 创建画板
 
@@ -163,3 +163,29 @@ PlanB:
      using UnityEngine.SceneManagement;
      ```
    + 添加`component`将脚本`StartGame`拖到`button`里，然后在`button`的`onclikc()`里点添加，再将`StartGame`拖到`List`里，选择相应函数
+
+## 5. ESC跳出菜单
+
+**宏定义**
+
++ panel width:  160
+
++ panel height: 180
+
+1. 创建`panel`，并修改长宽高，拖入相应`Menu`图片
+
+   遇到一个问题：Canvas比游戏界面大特别多
+
+   <img src=".\reportsAsserts\canvasProblem.png" alt="image-20231216010352467" />
+
+   + 查了一些资料，canvas的大小会自适应游戏画面，因此如果不在乎美观的话，其实也无所谓（之后再找找办法调回去）
+
+2. 添加C#脚本，并将脚本**挂载到相机**上
+
+   + 实现按ESC弹出收回，需要先将canvas隐藏起来。`serializefield` -> 将`private`的值也能显示在`inspector`上。
+
+     <img src=".\reportsAsserts\hideCanvas.png" alt="image-20231216012041447" style="zoom:50%;" />
+
+   + 实现弹出菜单时，时间暂停
+
+3. 

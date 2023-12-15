@@ -25,4 +25,6 @@
 
    <img src=".\Reports\readmeAsserts\StartGameScene.png" alt="image-20231215224924146" />
 
+5. ESC跳出菜单
+
    
