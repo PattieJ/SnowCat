@@ -95,6 +95,20 @@
    ```
 
    + `GetAxis`可能存在滑步问题，改用`GetAxisRaw`
+   + `fixedUpdate` vs `update`
 
+## 2. 设置相机跟随角色
 
+PlanA: 直接将相机挂载到角色下
 
++ 但这样相机过于敏感，稍微移动角色，屏幕就会变，不是一个好方法
+
+PlanB: 
+
++ `LateUpdate` vs `update`
+
++ player != null 的条件判断：以提供角色死亡时的情况
+
++ `float smooth` 数值(间断值）； `vector3.lerp()`差值计算
+
+  Z轴需要特别处理，不能直接全用position进行差值计算。将角色的Z轴
