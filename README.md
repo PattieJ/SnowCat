@@ -17,8 +17,12 @@
 
 2. 摄像头跟随角色移动，并有平滑效果
 
-3. 基本场景搭建
+3. 基本场景搭建: First day scene（粗糙版）
 
-   First day scene（粗糙版）
+   <img src=".\Reports\readmeAsserts\FristDayScene.png" alt="image-20231215213324479" style="zoom:50%;" />
 
-   <img src=".\Reports\readmeAsserts\firstDayScene.png" alt="image-20231215205641380" style="zoom:50%;" />
+4. 游戏开始界面设计(初版)
+
+   <img src=".\Reports\readmeAsserts\StartGameScene.png" alt="image-20231215224924146" />
+
+   

@@ -2,7 +2,7 @@
 
 ## 0. 图片切割
 
-##### 宏定义
+**宏定义**
 
 + Pixels Per Unit = 16
 
@@ -137,4 +137,29 @@ PlanB:
 
 4. 在`Ground` 上 画 `Plants`，新建layer Plants，并调整顺序即可
 
-   <img src=".\reportsAsserts\tilemapPlants.png" alt="image-20231215195221983" />
+   <img src=".\reportsAsserts\tilemapPlants.png" alt="image-20231215195221983" style="zoom:50%;" />
+
+## 4. 创建开始界面
+
+1. 创建场景 `StartScene`，在`File`的`build setting`里，添加`StartScene`，并将其置于最顶
+
+   <img src=".\reportsAsserts\addStartScene.png" alt="image-20231215211810384" style="zoom:50%;" />
+
+2. 在新场景下，右键 点击`UI`，选择`panel`。将背景图片拖入`Panel`的`Image`属性中的`source Image`中
+
+3. 右键 点击`UI`，选择`Text`，设置为title，修改内容和字体大小颜色等
+
+4. 右键 点击`UI`，选择`Image` ,并将主角拖入`Image`属性中的`source Image`中，调整位置
+
+5. 右键 点击`UI`，选择`button`，将`UI`图片拖入`Image`属性中的`source Image`中。分布如下
+
+   <img src=".\reportsAsserts\startSceneLayer.png" alt="image-20231215223456465" style="zoom:50%;" />
+
+6. 实现点击按钮时跳转到下一个场景
+
+   + 创建脚本`StartGame`
+
+   + ```c#
+     using UnityEngine.SceneManagement;
+     ```
+   + 添加`component`将脚本`StartGame`拖到`button`里，然后在`button`的`onclikc()`里点添加，再将`StartGame`拖到`List`里，选择相应函数
