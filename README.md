@@ -29,7 +29,7 @@
 
 5. ESC跳出菜单
 
-   ![image-20231216205457201](.\Reports\readmeAsserts\Menu.png)
+   <img src=".\Reports\readmeAsserts\Menu.png" alt="image-20231216205457201" />
 
 6. 触碰物品时按下F弹出对话框，进而可以跳转入小游戏场景
 
