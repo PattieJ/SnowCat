@@ -1,7 +1,151 @@
 fileFormatVersion: 2
 guid: 4aa494d8c6fca594a8b9ff2911c21076
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4143683250699916955
+    second: Square Buttons 26x19_0
+  - first:
+      213: 7787724450018884072
+    second: Square Buttons 26x19_1
+  - first:
+      213: 4216388969009364805
+    second: Square Buttons 26x19_2
+  - first:
+      213: -8140880815327101692
+    second: Square Buttons 26x19_3
+  - first:
+      213: 434278314601539011
+    second: Square Buttons 26x19_4
+  - first:
+      213: 652738281656750622
+    second: Square Buttons 26x19_5
+  - first:
+      213: -7545561599948321032
+    second: Square Buttons 26x19_6
+  - first:
+      213: -4298969683070875538
+    second: Square Buttons 26x19_7
+  - first:
+      213: -386255939439981872
+    second: Square Buttons 26x19_8
+  - first:
+      213: -5582567323648324644
+    second: Square Buttons 26x19_9
+  - first:
+      213: -8884502457000039617
+    second: Square Buttons 26x19_10
+  - first:
+      213: -3813058531226602339
+    second: Square Buttons 26x19_11
+  - first:
+      213: 6065415826546421184
+    second: Square Buttons 26x19_12
+  - first:
+      213: -928287961317912501
+    second: Square Buttons 26x19_13
+  - first:
+      213: 5567908504949456875
+    second: Square Buttons 26x19_14
+  - first:
+      213: 2658147213098708787
+    second: Square Buttons 26x19_15
+  - first:
+      213: -7553968146492096397
+    second: Square Buttons 26x19_16
+  - first:
+      213: -8754289806497059298
+    second: Square Buttons 26x19_17
+  - first:
+      213: 5511953184726929083
+    second: Square Buttons 26x19_18
+  - first:
+      213: 4823233765049868224
+    second: Square Buttons 26x19_19
+  - first:
+      213: 7777607520612583093
+    second: Square Buttons 26x19_20
+  - first:
+      213: -5603127067924638859
+    second: Square Buttons 26x19_21
+  - first:
+      213: 5117344462173535808
+    second: Square Buttons 26x19_22
+  - first:
+      213: -3196836737084678976
+    second: Square Buttons 26x19_23
+  - first:
+      213: -8088284639225243281
+    second: Square Buttons 26x19_24
+  - first:
+      213: 1633231830543886194
+    second: Square Buttons 26x19_25
+  - first:
+      213: 619261307390836051
+    second: Square Buttons 26x19_26
+  - first:
+      213: -2317394093465360740
+    second: Square Buttons 26x19_27
+  - first:
+      213: -4739580631693137308
+    second: Square Buttons 26x19_28
+  - first:
+      213: 4065772272672164894
+    second: Square Buttons 26x19_29
+  - first:
+      213: 3044983889881797656
+    second: Square Buttons 26x19_30
+  - first:
+      213: -975395548393798462
+    second: Square Buttons 26x19_31
+  - first:
+      213: 1438569798275258452
+    second: Square Buttons 26x19_32
+  - first:
+      213: 1757948198065032284
+    second: Square Buttons 26x19_33
+  - first:
+      213: 3786563748558139246
+    second: Square Buttons 26x19_34
+  - first:
+      213: 338921969248313218
+    second: Square Buttons 26x19_35
+  - first:
+      213: -2728201824529285619
+    second: Square Buttons 26x19_36
+  - first:
+      213: 8057515977064783609
+    second: Square Buttons 26x19_37
+  - first:
+      213: -8324855038523967045
+    second: Square Buttons 26x19_38
+  - first:
+      213: 2327351726145245238
+    second: Square Buttons 26x19_39
+  - first:
+      213: 6504021773423004885
+    second: Square Buttons 26x19_40
+  - first:
+      213: -8470928493831089636
+    second: Square Buttons 26x19_41
+  - first:
+      213: -8542682256846682803
+    second: Square Buttons 26x19_42
+  - first:
+      213: 3179392081454394351
+    second: Square Buttons 26x19_43
+  - first:
+      213: -8751448006184177452
+    second: Square Buttons 26x19_44
+  - first:
+      213: -5653242206239359712
+    second: Square Buttons 26x19_45
+  - first:
+      213: 2393989972782084120
+    second: Square Buttons 26x19_46
+  - first:
+      213: 7419413516274699418
+    second: Square Buttons 26x19_47
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +176,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -41,12 +185,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -68,7 +212,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +245,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Square Buttons 26x19_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 103
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9654bb56f1518930800000000000000
+      internalID: 4143683250699916955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square Buttons 26x19_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 103
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9fffb402e831c60800000000000000
+      internalID: 7787724450018884072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square Buttons 26x19_2
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 71
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54fbdac8d6f938a30800000000000000
+      internalID: 4216388969009364805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square Buttons 26x19_3
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 71
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40db2abd708c50f80800000000000000
+      internalID: -8140880815327101692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square Buttons 26x19_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 39
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5ea7383ddd60600800000000000000
+      internalID: 434278314601539011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square Buttons 26x19_5
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 39
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e121371420efe0900800000000000000
+      internalID: 652738281656750622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square Buttons 26x19_6
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 7
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe8044f3b7c84790800000000000000
+      internalID: -7545561599948321032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square Buttons 26x19_7
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 7
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e680364a9ddf654c0800000000000000
+      internalID: -4298969683070875538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

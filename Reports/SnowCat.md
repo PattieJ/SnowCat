@@ -168,9 +168,9 @@ PlanB:
 
 **宏定义**
 
-+ panel width:  160
++ panel width:  280
 
-+ panel height: 180
++ panel height: 320
 
 1. 创建`panel`，并修改长宽高，拖入相应`Menu`图片
 
@@ -180,6 +180,10 @@ PlanB:
 
    + 查了一些资料，canvas的大小会自适应游戏画面，因此如果不在乎美观的话，其实也无所谓（之后再找找办法调回去）
 
+   + 还是存在一些问题，canvas并不会随着画面放大等比例放大（solution：选择canvas随画面等比例放大即可）
+
+     <img src=".\reportsAsserts\canvasScaler.png" alt="image-20231216134501782" style="zoom:50%;" />
+
 2. 添加C#脚本，并将脚本**挂载到相机**上
 
    + 实现按ESC弹出收回，需要先将canvas隐藏起来。`serializefield` -> 将`private`的值也能显示在`inspector`上。
@@ -188,4 +192,15 @@ PlanB:
 
    + 实现弹出菜单时，时间暂停
 
-3. 
+3. 创建按钮：设计到将小按钮拉长成长条按钮的问题(先不解决了，用长的替代吧)
+
+   **宏定义**
+
+   + Front Size:  25
+   + color: 804C00
+
+   BUG: slide滑动时内部颜色也会跟着滑动，同时滑动条右边是黑色
+
+   <img src=".\reportsAsserts\Menu.png" alt="image-20231216202105379" style="zoom:50%;" />
+
+4. 
