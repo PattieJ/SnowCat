@@ -10,6 +10,7 @@ public class GameTrigger : MonoBehaviour
     public GameObject dialogueBox;
     public Text dialogueText;
     public GameObject F;
+    public string sceneToLoad;
 
     private string content = "EnterÌø×ª³¡¾°";
     private bool triggerKey;
@@ -31,7 +32,7 @@ public class GameTrigger : MonoBehaviour
         }
         if(dialogKey == true && Input.GetKeyDown(KeyCode.Return))
         {
-            SceneManager.LoadScene("FirstGameScene");
+            SceneManager.LoadScene(sceneToLoad);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)

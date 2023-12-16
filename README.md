@@ -23,7 +23,7 @@
 
 4. 基本场景搭建: First day scene（粗糙版）
 
-   <img src=".\Reports\readmeAsserts\FristDayScene.png" alt="image-20231215213324479" style="zoom:50%;" />
+   <img src=".\Reports\readmeAsserts\FristDayScene.png" alt="image-20231215213324479"  />
 
    
 
