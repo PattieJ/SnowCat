@@ -27,6 +27,8 @@
 
    + 添加 `Rigidbody 2D`，把`gravity scale`调成`0`，再添加轴约束的`Z`轴
 
+   + `collision detection` 改为 `continuous`
+
      <img src=".\reportsAsserts\rigidbody.png" alt="image-20231215013414918" style="zoom:50%;" />
 
      TODO：三个蓝框内的属性，有待了解
@@ -203,4 +205,22 @@ PlanB:
 
    <img src=".\reportsAsserts\Menu.png" alt="image-20231216202105379" style="zoom:50%;" />
 
-4. 
+## 6. 触碰物品跳转关卡
+
+物品先暂时用火堆替代（后面再根据需求做改动）
+
+1. 创建物品并添加碰撞属性，修改碰撞范围如下所示，要比物体大一些，避免物体重叠的时候才发生触发
+
+   <img src=".\reportsAsserts\object.png" alt="image-20231216211511772" style="zoom:50%;" />
+
+2. 添加刚体属性，并将`body Type`改为`Static`
+
+3. 创建 `GameTrigger`脚本，挂载到`Obejct`上
+
+4. 实现当和物体发生碰撞时，弹出F小标提示按下按钮
+
+5. 当按下F时，跳出对话框表示是否进入下一个场景
+
+6. 按下yes按钮，进入下一个场景
+
+   + TODO：跳转的方式没想好，先做成enter跳转吧

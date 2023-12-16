@@ -59,6 +59,9 @@ TagManager:
   - name: Bridge
     uniqueID: 2002915795
     locked: 0
+  - name: Trigger
+    uniqueID: 3748949241
+    locked: 0
   - name: Player
     uniqueID: 2058998429
     locked: 0
