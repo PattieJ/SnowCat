@@ -235,7 +235,23 @@ PlanB:
 
 ## 8. swimCat
 
-### 1. 移动背景
+### 1. 移动背景并循环播放
+
+1. 创建脚本，将leftMove 设为(1,0,0) moveSpeed设为-2 可使背景向左移动
+
+   ```C#
+   gameObject.transform.position += Leftmove * moveSpeed * Time.deltaTime;
+   ```
+
+   
+
+2. 循环背景：当到达边界的时候，将背景1移到背景2的后面，依次循环
+
+   ```c#
+   this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x + 2 * width, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
+   ```
+
+   
 
 ### 2. 动态水
 
