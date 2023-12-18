@@ -19,7 +19,7 @@
 
 + Pixels Per Unit = 64
 + walkSide sample = 10
-+ back & fromt sample = 5
++ back & front sample = 5
 + sleep sample = 2
 + idle sample = 2
 
@@ -49,7 +49,7 @@
 
 4. ##### 制作动画：`animation`
 
-   + 创建 `animation controller` ，命名为Player
+   + 创建 `animation controller` ，（在animation文件夹中），命名为Player
    + 在 `animation` 里 `create`，此处 create 一个 `BlackCat_SideWalk`
    + 将相应素材拖入`animator`，同时修改`sample`，调整速度
 
@@ -71,6 +71,8 @@
    + 创建 `Walk` 的混合树，选择 `blend type` 为 `2D Freedom`
 
    + 在`parameters`部分，添加变量`float`的 `X` `Y` 和`bool IsWalking`
+
+     <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\prama.png" alt="image-20231218200653185" style="zoom:50%;" />
 
    + 点击 `ADD MotionField`，添加四个状态，分别为 下、上、左、右。再根据状态上下左右调整XY值。
 
@@ -224,3 +226,35 @@ PlanB:
 6. 按下yes按钮，进入下一个场景
 
    + TODO：跳转的方式没想好，先做成enter跳转吧
+
+## 7. 同步场景加载
+
+同时也有异步场景加载，但由于本游戏不算特别复杂，暂时不考虑使用异步的方法
+
+//决定还是先做好小游戏再做load场景吧
+
+## 8. swimCat
+
+### 1. 移动背景
+
+### 2. 动态水
+
+### 3. 空格上移 && 浮力效果
+
+### 4. 氧气条
+
+### 5. 随机出现的小鱼（或者固定出现）
+
+### 6. 水草缠绕设置
+
+### 7. 记分UI
+
+### 8. 猫咪游泳动画制作
+
+宏定义：sample = 2
+
+1. 自己用PS改了一下图片
+2. 根据 **1** 的步骤，做出动画效果
+
+有点奇怪，不知道怎么改，之后再说吧
+
