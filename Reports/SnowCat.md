@@ -255,7 +255,48 @@ PlanB:
 
 ### 2. 动态水
 
-### 3. 空格上移 && 浮力效果
+学习了Unity中带有Sprite Shape的2D水教程
+
+1. 创建一个Sprite Shape -> closed shape
+
+2. 创建一个 Sprite Mask，并调整想要的形状
+
+   <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\maskShape.png" alt="image-20231219185050122" style="zoom:50%;" />
+
+3. 将sprite shape里的mask interaction改为 visible inside mask
+
+   <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\visibleMask.png" alt="image-20231219185148419" style="zoom:50%;" />
+
+4. 点击Edit spline可以修改形状和添加点
+
+   <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\editLine.png" alt="image-20231219185241993" style="zoom:50%;" />
+
+5. 添加脚本，挂载到sprite shape上，通过脚本控制点的移动，设置为正弦移动
+
+6. 若是不清楚每个点对应的号，可以通过
+
+   ```C#
+   for (int i = 0; i < spline.GetPointCount(); i++)
+   {
+       splinePos[i] = spline.GetPosition(i);
+   }
+   ```
+
+   获取每个点的坐标，然后移动每个点，查看每个点都是第几个
+
+   > 经过测试,应该移动的点应该为2\3\4\5\6\7
+
+7. 通过公式设置角度达成效果(参数细节可能有所调整，但大致效果如下)
+
+   <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\wave.gif" alt="wave" style="zoom:50%;" />
+
+### 3. 掉入水面时有重力水花效果
+
+思路：给每个水面的点绑定一个球，给球设置碰撞体（设置成trigger模式），从而实现出入水面时有重力效果
+
+水花效果思路：使用Polygon Collider2D检测碰撞，当存在碰撞的时候，使用粒子系统发射水花动画
+
+在油管上找到了水花的 [制作教程](https://www.youtube.com/watch?v=0Kt7gLaoB18)，好强的印度姐姐
 
 ### 4. 氧气条
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SwimCatController : MonoBehaviour
 {
-    public Vector2 swim = new Vector2(0,4);
+    public Vector2 swim = new Vector2(0,5);
     private Animator animator;
     private Rigidbody2D rb;
     // Start is called before the first frame update
