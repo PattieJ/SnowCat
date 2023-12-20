@@ -5,6 +5,7 @@ using UnityEngine;
 public class SwimCatController : MonoBehaviour
 {
     public Vector2 swim = new Vector2(0,5);
+    public float waterSurfaceY = 5.5f;
     private Animator animator;
     private Rigidbody2D rb;
     // Start is called before the first frame update
@@ -17,20 +18,33 @@ public class SwimCatController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerAnim();
-    }
-
-
-    private void PlayerAnim()
-    {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            animator.SetBool("IsUp", true);
+            animator.SetBool("IsSwim", true);
             rb.velocity = swim;
         }
         else
         {
-            animator.SetBool("IsUp", false);
+            animator.SetBool("IsSwim", false);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Edge") && transform.position.y < waterSurfaceY)
+        {
+            //Debug.Log("1");
+            animator.SetBool("IsSwim", false);
+            animator.SetBool("IsUp", true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Edge"))
+        {
+            //Debug.Log("1");
+            animator.SetBool("IsUp",false);
         }
     }
 }

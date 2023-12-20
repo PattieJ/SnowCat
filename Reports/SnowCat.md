@@ -261,15 +261,15 @@ PlanB:
 
 2. 创建一个 Sprite Mask，并调整想要的形状
 
-   <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\maskShape.png" alt="image-20231219185050122" style="zoom:50%;" />
+   <img src=".\reportsAsserts\maskShape.png" alt="image-20231219185050122" style="zoom:50%;" />
 
 3. 将sprite shape里的mask interaction改为 visible inside mask
 
-   <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\visibleMask.png" alt="image-20231219185148419" style="zoom:50%;" />
+   <img src=".\reportsAsserts\visibleMask.png" alt="image-20231219185148419" style="zoom:50%;" />
 
 4. 点击Edit spline可以修改形状和添加点
 
-   <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\editLine.png" alt="image-20231219185241993" style="zoom:50%;" />
+   <img src=".\reportsAsserts\editLine.png" alt="image-20231219185241993" style="zoom:50%;" />
 
 5. 添加脚本，挂载到sprite shape上，通过脚本控制点的移动，设置为正弦移动
 
@@ -288,7 +288,7 @@ PlanB:
 
 7. 通过公式设置角度达成效果(参数细节可能有所调整，但大致效果如下)
 
-   <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\wave.gif" alt="wave" style="zoom:50%;" />
+   <img src=".\reportsAsserts\wave.gif" alt="wave" style="zoom:50%;" />
 
 ### 3. 掉入水面时有重力水花效果
 
@@ -298,20 +298,54 @@ PlanB:
 
 在油管上找到了水花的 [制作教程](https://www.youtube.com/watch?v=0Kt7gLaoB18)，好强的印度姐姐
 
-### 4. 氧气条
+---------------
+
+感觉这种方式还是太假了，尝试用回原始的2D的像素帧的方式吧
+
+问题1： 缝隙问题
+
+<img src=".\reportsAsserts\gap.png" alt="image-20231219234539706" style="zoom:50%;" />
+
+添加一个atlas，但是图片会变得很模糊，在Unity里打开Edit/Project Settings/Quality,然后把这一项设置为disabled，解决
+
+问题2：给水体加一段碰撞体检测：添加tilemap collider 2D，选择use composite，再添加composite collision 2D
+
+<img src=".\reportsAsserts\collision.png" alt="image-20231220015052162" style="zoom:50%;" />
+
+<img src=".\reportsAsserts\composite.png" alt="image-20231220015152441" style="zoom:50%;" />
+
+
+
+### 4. 氧气条和记分UI
+
+1. 创建UI 的 canvas并添加image，将frame拖入，点击set native size恢复尺寸
+
+   <img src=".\reportsAsserts\setSize.png" alt="image-20231220023042251" style="zoom:50%;" />
+
+2. 再添加一个image，将fill拖入，移动到合适位置并设置合适的图层关系之后，新建一个空的gameobjcet包含frame和fill
+
+   <img src=".\reportsAsserts\healthbar.png" alt="image-20231220143652515" style="zoom:50%;" />
+
+3. 给healthBar添加slider组件，然后对slider进行设置
+
+   <img src=".\reportsAsserts\slider.png" alt="image-20231220143808765" style="zoom:50%;" />
+
+4. 给healthBar添加C#脚本healthbar
+
+5. 给player添加PlayerHealth脚本（设定当猫处于wateredge之下时，血量逐减）
+
+6. 
 
 ### 5. 随机出现的小鱼（或者固定出现）
 
 ### 6. 水草缠绕设置
 
-### 7. 记分UI
-
-### 8. 猫咪游泳动画制作
+### 7. 猫咪游泳动画制作
 
 宏定义：sample = 2
 
 1. 自己用PS改了一下图片
 2. 根据 **1** 的步骤，做出动画效果
 
-有点奇怪，不知道怎么改，之后再说吧
+调整触发anim动画的方式和碰撞体大小的设置，稍微合理了一些
 
