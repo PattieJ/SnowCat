@@ -49,7 +49,7 @@
 
 4. ##### 制作动画：`animation`
 
-   + 创建 `animation controller` ，（在animation文件夹中），命名为Player
+   + 创建 `animation controller` ，（在animation文件夹中），命名为Player，拖到player里
    + 在 `animation` 里 `create`，此处 create 一个 `BlackCat_SideWalk`
    + 将相应素材拖入`animator`，同时修改`sample`，调整速度
 
@@ -314,6 +314,8 @@ PlanB:
 
 <img src=".\reportsAsserts\composite.png" alt="image-20231220015152441" style="zoom:50%;" />
 
+问题3：出入水时的水花制作
+
 
 
 ### 4. 氧气条和记分UI
@@ -334,9 +336,18 @@ PlanB:
 
 5. 给player添加PlayerHealth脚本（设定当猫处于wateredge之下时，血量逐减）
 
-6. 
+### 5. 随机出现的小鱼
 
-### 5. 随机出现的小鱼（或者固定出现）
+1. 给小鱼创建animator让小鱼动起来
+2. 给小鱼挂载fishcontroller脚本
+   + 小鱼和背景一样，一起移动
+   + 超出相机的范围时销毁
+   + 随机生成小鱼
+3. 吃到小鱼有动画效果
+   + 制作一个smoke的animi动画，并把looptime关掉
+   + 给小鱼添加碰撞并打开trigger
+   + 碰撞后隐藏小鱼并激活smoke效果
+   + 最后destroy掉父类
 
 ### 6. 水草缠绕设置
 
