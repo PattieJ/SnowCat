@@ -12,7 +12,16 @@ EditorBuildSettings:
     path: Assets/Scenes/FirstDayScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/FirstGameScene.unity
+    path: Assets/Scenes/SecondDayScene.unity
+    guid: a2be602ae5a4ee44a8aad4c36d4bacab
+  - enabled: 1
+    path: Assets/Scenes/ThridDayScene.unity
+    guid: 51a4b0c8212fd7f4899507f870037cc6
+  - enabled: 1
+    path: Assets/Scenes/ChristmasEndScene.unity
+    guid: 16e7912d5d2bdbf4abeae0e081bddeb5
+  - enabled: 1
+    path: Assets/Scenes/SwimCatScene.unity
     guid: 268d6607ee0ccbf429fc6f87d552e4a5
   - enabled: 1
     path: Assets/Scenes/SecondGameScene.unity

@@ -10,7 +10,7 @@ public class GameTrigger : MonoBehaviour
     public GameObject dialogueBox;
     public Text dialogueText;
     public GameObject F;
-    public string sceneToLoad;
+    public int sceneToLoad;
 
     private string content = "EnterÌø×ª³¡¾°";
     private bool triggerKey;

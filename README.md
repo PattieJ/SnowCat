@@ -1,13 +1,11 @@
 # SnowCat
 ## 简介
 
-用unity2D实现的TopDown类游戏
-
 制作过程记录：[Report](./Reports/SnowCat.md)
 
 ## 版本信息
 
-+ unity 2020.3.9f1c1
++ 2020.3.9f1c1
 
 ## 游戏简介
 

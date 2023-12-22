@@ -19,7 +19,7 @@
 
 + Pixels Per Unit = 64
 + walkSide sample = 10
-+ back & fromt sample = 5
++ back & front sample = 5
 + sleep sample = 2
 + idle sample = 2
 
@@ -49,7 +49,7 @@
 
 4. ##### 制作动画：`animation`
 
-   + 创建 `animation controller` ，命名为Player
+   + 创建 `animation controller` ，（在animation文件夹中），命名为Player，拖到player里
    + 在 `animation` 里 `create`，此处 create 一个 `BlackCat_SideWalk`
    + 将相应素材拖入`animator`，同时修改`sample`，调整速度
 
@@ -71,6 +71,8 @@
    + 创建 `Walk` 的混合树，选择 `blend type` 为 `2D Freedom`
 
    + 在`parameters`部分，添加变量`float`的 `X` `Y` 和`bool IsWalking`
+
+     <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\prama.png" alt="image-20231218200653185" style="zoom:50%;" />
 
    + 点击 `ADD MotionField`，添加四个状态，分别为 下、上、左、右。再根据状态上下左右调整XY值。
 
@@ -224,3 +226,140 @@ PlanB:
 6. 按下yes按钮，进入下一个场景
 
    + TODO：跳转的方式没想好，先做成enter跳转吧
+
+## 7. 同步场景加载
+
+同时也有异步场景加载，但由于本游戏不算特别复杂，暂时不考虑使用异步的方法
+
+//决定还是先做好小游戏再做load场景吧
+
+## 8. swimCat
+
+### 1. 移动背景并循环播放
+
+1. 创建脚本，将leftMove 设为(1,0,0) moveSpeed设为-2 可使背景向左移动
+
+   ```C#
+   gameObject.transform.position += Leftmove * moveSpeed * Time.deltaTime;
+   ```
+
+   
+
+2. 循环背景：当到达边界的时候，将背景1移到背景2的后面，依次循环
+
+   ```c#
+   this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x + 2 * width, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
+   ```
+
+   
+
+### 2. 动态水
+
+学习了Unity中带有Sprite Shape的2D水教程
+
+1. 创建一个Sprite Shape -> closed shape
+
+2. 创建一个 Sprite Mask，并调整想要的形状
+
+   <img src=".\reportsAsserts\maskShape.png" alt="image-20231219185050122" style="zoom:50%;" />
+
+3. 将sprite shape里的mask interaction改为 visible inside mask
+
+   <img src=".\reportsAsserts\visibleMask.png" alt="image-20231219185148419" style="zoom:50%;" />
+
+4. 点击Edit spline可以修改形状和添加点
+
+   <img src=".\reportsAsserts\editLine.png" alt="image-20231219185241993" style="zoom:50%;" />
+
+5. 添加脚本，挂载到sprite shape上，通过脚本控制点的移动，设置为正弦移动
+
+6. 若是不清楚每个点对应的号，可以通过
+
+   ```C#
+   for (int i = 0; i < spline.GetPointCount(); i++)
+   {
+       splinePos[i] = spline.GetPosition(i);
+   }
+   ```
+
+   获取每个点的坐标，然后移动每个点，查看每个点都是第几个
+
+   > 经过测试,应该移动的点应该为2\3\4\5\6\7
+
+7. 通过公式设置角度达成效果(参数细节可能有所调整，但大致效果如下)
+
+   <img src=".\reportsAsserts\wave.gif" alt="wave" style="zoom:50%;" />
+
+### 3. 掉入水面时有重力水花效果
+
+思路：给每个水面的点绑定一个球，给球设置碰撞体（设置成trigger模式），从而实现出入水面时有重力效果
+
+水花效果思路：使用Polygon Collider2D检测碰撞，当存在碰撞的时候，使用粒子系统发射水花动画
+
+在油管上找到了水花的 [制作教程](https://www.youtube.com/watch?v=0Kt7gLaoB18)，好强的印度姐姐
+
+---------------
+
+感觉这种方式还是太假了，尝试用回原始的2D的像素帧的方式吧
+
+问题1： 缝隙问题
+
+<img src=".\reportsAsserts\gap.png" alt="image-20231219234539706" style="zoom:50%;" />
+
+添加一个atlas，但是图片会变得很模糊，在Unity里打开Edit/Project Settings/Quality,然后把这一项设置为disabled，解决
+
+问题2：给水体加一段碰撞体检测：添加tilemap collider 2D，选择use composite，再添加composite collision 2D
+
+<img src=".\reportsAsserts\collision.png" alt="image-20231220015052162" style="zoom:50%;" />
+
+<img src=".\reportsAsserts\composite.png" alt="image-20231220015152441" style="zoom:50%;" />
+
+问题3：出入水时的水花制作
+
+
+
+### 4. 氧气条和记分UI
+
+1. 创建UI 的 canvas并添加image，将frame拖入，点击set native size恢复尺寸
+
+   <img src=".\reportsAsserts\setSize.png" alt="image-20231220023042251" style="zoom:50%;" />
+
+2. 再添加一个image，将fill拖入，移动到合适位置并设置合适的图层关系之后，新建一个空的gameobjcet包含frame和fill
+
+   <img src=".\reportsAsserts\healthbar.png" alt="image-20231220143652515" style="zoom:50%;" />
+
+3. 给healthBar添加slider组件，然后对slider进行设置
+
+   <img src=".\reportsAsserts\slider.png" alt="image-20231220143808765" style="zoom:50%;" />
+
+4. 给healthBar添加C#脚本healthbar
+
+5. 给player添加PlayerHealth脚本（设定当猫处于wateredge之下时，血量逐减）
+
+6. 
+
+### 5. 随机出现的小鱼
+
+1. 给小鱼创建animator让小鱼动起来
+2. 给小鱼挂载fishcontroller脚本
+   + 小鱼和背景一样，一起移动
+   + 超出相机的范围时销毁
+   + 随机生成小鱼
+3. 吃到小鱼有动画效果
+   + 制作一个smoke的animi动画，并把looptime关掉
+   + 给小鱼添加碰撞并打开trigger
+   + 碰撞后隐藏小鱼并激活smoke效果
+   + 最后destroy掉父类
+
+### 6. 水草缠绕设置
+
+### 7. 猫咪游泳动画制作
+
+宏定义：sample = 2
+
+1. 自己用PS改了一下图片
+2. 根据 **1** 的步骤，做出动画效果
+
+调整触发anim动画的方式和碰撞体大小的设置，稍微合理了一些
+
+### 8. 氧气条耗尽之后游戏结束
