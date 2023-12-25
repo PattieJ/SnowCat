@@ -380,6 +380,20 @@ DONE
 
     <img src=".\reportsAsserts\tilesExtract.png" style="zoom:50%;" />
 
++ anim tilemap的设置
+
+  + 创建anim tilemap
+
+  + 将number of animition 设置为对应帧数，此处设置为4
+
+  + 在四个sprite里分别select四个帧数的图片
+
+  + 将collider type设置为sprite，同时将flags设置为update physics
+
+    <img src=".\reportsAsserts\animiUpdate.png" alt="image-20231225211804499" style="zoom:50%;" />
+
+  + 将生成好的anmi tile 拖入 tile palette里
+
 ### 7. 猫咪游泳动画制作
 
 宏定义：sample = 2
