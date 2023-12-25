@@ -364,7 +364,21 @@ DONE
 
   查询到tilemap能制作动画效果！因此尝试使用tilemap来进行刺的动画设计
 
+  !!要安装tiles插件
 
+  + 点击点击window->packagemanager
+
+    <img src=".\reportsAsserts\tileswindows.png" style="zoom:50%;" />
+
+  + 点开project setting
+
+  + 打勾
+
+    <img src=".\reportsAsserts\packagemanager.png" style="zoom:50%;" />
+
+  + install
+
+    <img src=".\reportsAsserts\tilesExtract.png" style="zoom:50%;" />
 
 ### 7. 猫咪游泳动画制作
 
