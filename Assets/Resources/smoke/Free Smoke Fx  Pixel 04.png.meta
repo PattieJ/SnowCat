@@ -195,7 +195,7 @@ TextureImporter:
       213: -8572918783351192672
     second: Free Smoke Fx  Pixel 04_63
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -212,10 +212,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -254,6 +256,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -265,6 +269,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -277,6 +282,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -289,6 +295,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1648,9 +1668,73 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Free Smoke Fx  Pixel 04_0: -5944832118280206015
+      Free Smoke Fx  Pixel 04_1: 8848241241217801831
+      Free Smoke Fx  Pixel 04_10: -4199808800870328637
+      Free Smoke Fx  Pixel 04_11: -2946046221247221509
+      Free Smoke Fx  Pixel 04_12: -3761446452031929168
+      Free Smoke Fx  Pixel 04_13: 3441416647439730423
+      Free Smoke Fx  Pixel 04_14: 6393939590278667652
+      Free Smoke Fx  Pixel 04_15: 5424466975741003257
+      Free Smoke Fx  Pixel 04_16: 3621986131622560067
+      Free Smoke Fx  Pixel 04_17: -1179789924720572007
+      Free Smoke Fx  Pixel 04_18: -4605323276399297958
+      Free Smoke Fx  Pixel 04_19: 2986694476571592556
+      Free Smoke Fx  Pixel 04_2: 8793261146601458887
+      Free Smoke Fx  Pixel 04_20: -6305269936463870746
+      Free Smoke Fx  Pixel 04_21: -7595415192110179868
+      Free Smoke Fx  Pixel 04_22: 389484560943080699
+      Free Smoke Fx  Pixel 04_23: 8954158572978404539
+      Free Smoke Fx  Pixel 04_24: -3583128002764891103
+      Free Smoke Fx  Pixel 04_25: 1608171841238758561
+      Free Smoke Fx  Pixel 04_26: -7754363165226712081
+      Free Smoke Fx  Pixel 04_27: -2893034292830350164
+      Free Smoke Fx  Pixel 04_28: 5235740930310606035
+      Free Smoke Fx  Pixel 04_29: -5979593483587631572
+      Free Smoke Fx  Pixel 04_3: -74859173265101491
+      Free Smoke Fx  Pixel 04_30: 3902846504118356451
+      Free Smoke Fx  Pixel 04_31: -4126457745544437287
+      Free Smoke Fx  Pixel 04_32: -4098108254095583180
+      Free Smoke Fx  Pixel 04_33: -3171897350672596133
+      Free Smoke Fx  Pixel 04_34: 2099189017605621929
+      Free Smoke Fx  Pixel 04_35: -1999406052583224223
+      Free Smoke Fx  Pixel 04_36: 7801084198154980938
+      Free Smoke Fx  Pixel 04_37: -4322192037907807777
+      Free Smoke Fx  Pixel 04_38: -158808552018944823
+      Free Smoke Fx  Pixel 04_39: -5713711764541401153
+      Free Smoke Fx  Pixel 04_4: 8903571575177184519
+      Free Smoke Fx  Pixel 04_40: 7204032982736016061
+      Free Smoke Fx  Pixel 04_41: 2207623234175890648
+      Free Smoke Fx  Pixel 04_42: 3936458648161721592
+      Free Smoke Fx  Pixel 04_43: 6612183229733269480
+      Free Smoke Fx  Pixel 04_44: 3476906422956073842
+      Free Smoke Fx  Pixel 04_45: -8499373149285697888
+      Free Smoke Fx  Pixel 04_46: -6399947703319685493
+      Free Smoke Fx  Pixel 04_47: 537202818406657183
+      Free Smoke Fx  Pixel 04_48: -1112607653739847113
+      Free Smoke Fx  Pixel 04_49: -7483530325313751689
+      Free Smoke Fx  Pixel 04_5: 5404212219890874073
+      Free Smoke Fx  Pixel 04_50: -7525988473847511920
+      Free Smoke Fx  Pixel 04_51: 8864247076845222720
+      Free Smoke Fx  Pixel 04_52: -3752860820286346660
+      Free Smoke Fx  Pixel 04_53: -5233750457278879673
+      Free Smoke Fx  Pixel 04_54: -8021915221716664721
+      Free Smoke Fx  Pixel 04_55: 999429197927465227
+      Free Smoke Fx  Pixel 04_56: -2263538989410803173
+      Free Smoke Fx  Pixel 04_57: 2613631687044118202
+      Free Smoke Fx  Pixel 04_58: 8297174849369128205
+      Free Smoke Fx  Pixel 04_59: 7561255359024930300
+      Free Smoke Fx  Pixel 04_6: -1144029447939531260
+      Free Smoke Fx  Pixel 04_60: -4323597836600664973
+      Free Smoke Fx  Pixel 04_61: 1373733522335134544
+      Free Smoke Fx  Pixel 04_62: -7297943277622173374
+      Free Smoke Fx  Pixel 04_63: -8572918783351192672
+      Free Smoke Fx  Pixel 04_7: -6554757175018522075
+      Free Smoke Fx  Pixel 04_8: -960114770020941698
+      Free Smoke Fx  Pixel 04_9: -7753150512441167284
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

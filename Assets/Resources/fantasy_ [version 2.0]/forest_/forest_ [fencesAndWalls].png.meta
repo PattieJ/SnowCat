@@ -360,7 +360,7 @@ TextureImporter:
       213: 5728488541680052783
     second: forest_ [fencesAndWalls]_118
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -377,10 +377,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -419,6 +421,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -430,6 +434,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -442,6 +447,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -454,6 +460,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2968,9 +2988,128 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      forest_ [fencesAndWalls]_0: -2493410337481529956
+      forest_ [fencesAndWalls]_1: -7359527697368871080
+      forest_ [fencesAndWalls]_10: 3291992470856582191
+      forest_ [fencesAndWalls]_100: 5832629365208434092
+      forest_ [fencesAndWalls]_101: 8240864017253440954
+      forest_ [fencesAndWalls]_102: 8114472250885244188
+      forest_ [fencesAndWalls]_103: -481515042880831080
+      forest_ [fencesAndWalls]_104: 2048441231743827490
+      forest_ [fencesAndWalls]_105: -4633656066676645119
+      forest_ [fencesAndWalls]_106: 7648207941599817887
+      forest_ [fencesAndWalls]_107: 8917699611004681630
+      forest_ [fencesAndWalls]_108: -5416914894083763738
+      forest_ [fencesAndWalls]_109: 8799699799769745799
+      forest_ [fencesAndWalls]_11: -4342056067031049998
+      forest_ [fencesAndWalls]_110: -865460262768412456
+      forest_ [fencesAndWalls]_111: 8784819986807181926
+      forest_ [fencesAndWalls]_112: 2815930035126862703
+      forest_ [fencesAndWalls]_113: 4136078888163737064
+      forest_ [fencesAndWalls]_114: 6636819389317204886
+      forest_ [fencesAndWalls]_115: -6004190056063659864
+      forest_ [fencesAndWalls]_116: -3131810111150010886
+      forest_ [fencesAndWalls]_117: -3721166227383952432
+      forest_ [fencesAndWalls]_118: 5728488541680052783
+      forest_ [fencesAndWalls]_12: -6316750786679646541
+      forest_ [fencesAndWalls]_13: -7965658001167851670
+      forest_ [fencesAndWalls]_14: -3173527471262919478
+      forest_ [fencesAndWalls]_15: 4892733437628922531
+      forest_ [fencesAndWalls]_16: 6563353979949753063
+      forest_ [fencesAndWalls]_17: -795176946814293608
+      forest_ [fencesAndWalls]_18: -1974243103807764366
+      forest_ [fencesAndWalls]_19: 2541040127473415177
+      forest_ [fencesAndWalls]_2: 5395563269121398146
+      forest_ [fencesAndWalls]_20: -2888463535154682748
+      forest_ [fencesAndWalls]_21: 6906847169551024181
+      forest_ [fencesAndWalls]_22: 4226318322122202177
+      forest_ [fencesAndWalls]_23: -2952521571313295759
+      forest_ [fencesAndWalls]_24: 5882622649740924837
+      forest_ [fencesAndWalls]_25: -2719877581953605971
+      forest_ [fencesAndWalls]_26: 6897032011335635209
+      forest_ [fencesAndWalls]_27: -251195443655096316
+      forest_ [fencesAndWalls]_28: 7551641131719884800
+      forest_ [fencesAndWalls]_29: 8750357023197286777
+      forest_ [fencesAndWalls]_3: -2164057380459494737
+      forest_ [fencesAndWalls]_30: -7657168916097615772
+      forest_ [fencesAndWalls]_31: -22644817414705988
+      forest_ [fencesAndWalls]_32: -5619810756756331128
+      forest_ [fencesAndWalls]_33: 8256603869336948719
+      forest_ [fencesAndWalls]_34: -6723688915672675439
+      forest_ [fencesAndWalls]_35: -6907134924622972083
+      forest_ [fencesAndWalls]_36: -273625713200841062
+      forest_ [fencesAndWalls]_37: 3783344755294319324
+      forest_ [fencesAndWalls]_38: 3073248273796286955
+      forest_ [fencesAndWalls]_39: -2188113801798202169
+      forest_ [fencesAndWalls]_4: -3930762601085383306
+      forest_ [fencesAndWalls]_40: -565347756029718350
+      forest_ [fencesAndWalls]_41: 6205277732994688714
+      forest_ [fencesAndWalls]_42: 616447326347825612
+      forest_ [fencesAndWalls]_43: -338926549440860127
+      forest_ [fencesAndWalls]_44: 2928166951122403241
+      forest_ [fencesAndWalls]_45: 8138740468316853456
+      forest_ [fencesAndWalls]_46: -5016813480169665733
+      forest_ [fencesAndWalls]_47: -1305320364706604344
+      forest_ [fencesAndWalls]_48: -2686318696035710111
+      forest_ [fencesAndWalls]_49: -8710800256266332027
+      forest_ [fencesAndWalls]_5: -5600655639589327613
+      forest_ [fencesAndWalls]_50: 600569070869451707
+      forest_ [fencesAndWalls]_51: 7239471207002124006
+      forest_ [fencesAndWalls]_52: -3082554005326830476
+      forest_ [fencesAndWalls]_53: 8459306677183100632
+      forest_ [fencesAndWalls]_54: -4648859096289715422
+      forest_ [fencesAndWalls]_55: 5528828718206851434
+      forest_ [fencesAndWalls]_56: 437155923952443650
+      forest_ [fencesAndWalls]_57: 1038834994147939056
+      forest_ [fencesAndWalls]_58: -4011264195495644451
+      forest_ [fencesAndWalls]_59: -2602461560236188613
+      forest_ [fencesAndWalls]_6: 2165647874900109800
+      forest_ [fencesAndWalls]_60: -9006824237858838602
+      forest_ [fencesAndWalls]_61: -4804384421594110612
+      forest_ [fencesAndWalls]_62: 1812624969741870223
+      forest_ [fencesAndWalls]_63: -2025480126232949060
+      forest_ [fencesAndWalls]_64: -2824634523721149717
+      forest_ [fencesAndWalls]_65: 3092277751708048008
+      forest_ [fencesAndWalls]_66: -72279524059185821
+      forest_ [fencesAndWalls]_67: 5348409011982594639
+      forest_ [fencesAndWalls]_68: -6319437818755943615
+      forest_ [fencesAndWalls]_69: -3424060238731228869
+      forest_ [fencesAndWalls]_7: -6870053636466208016
+      forest_ [fencesAndWalls]_70: 1093313079560116452
+      forest_ [fencesAndWalls]_71: -7464743570510572811
+      forest_ [fencesAndWalls]_72: -6331027401317967597
+      forest_ [fencesAndWalls]_73: -7833263959910293329
+      forest_ [fencesAndWalls]_74: -465556236427873712
+      forest_ [fencesAndWalls]_75: -191342432436541546
+      forest_ [fencesAndWalls]_76: 9042338537542380495
+      forest_ [fencesAndWalls]_77: -964316506321838487
+      forest_ [fencesAndWalls]_78: -2659573797751084980
+      forest_ [fencesAndWalls]_79: 7069787300851438967
+      forest_ [fencesAndWalls]_8: 8633800368291011078
+      forest_ [fencesAndWalls]_80: 5509199555865574784
+      forest_ [fencesAndWalls]_81: 5500534737029303757
+      forest_ [fencesAndWalls]_82: -7910204687910643506
+      forest_ [fencesAndWalls]_83: 5013818921176963451
+      forest_ [fencesAndWalls]_84: 8065292093830155351
+      forest_ [fencesAndWalls]_85: 4650605843264174787
+      forest_ [fencesAndWalls]_86: 5993737645970149099
+      forest_ [fencesAndWalls]_87: -4013615105937557995
+      forest_ [fencesAndWalls]_88: -2326565817471467838
+      forest_ [fencesAndWalls]_89: 7584401552634915693
+      forest_ [fencesAndWalls]_9: 1776417740537238122
+      forest_ [fencesAndWalls]_90: 6264494754801761237
+      forest_ [fencesAndWalls]_91: 6358236960480103851
+      forest_ [fencesAndWalls]_92: 7680060675357766766
+      forest_ [fencesAndWalls]_93: -4246115502104433354
+      forest_ [fencesAndWalls]_94: 1987833387893861542
+      forest_ [fencesAndWalls]_95: -3532608997434740474
+      forest_ [fencesAndWalls]_96: 4958353213637815013
+      forest_ [fencesAndWalls]_97: 1929934394972318191
+      forest_ [fencesAndWalls]_98: -4664930117173176941
+      forest_ [fencesAndWalls]_99: -4546263958115979811
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -348,7 +348,7 @@ TextureImporter:
       213: 8677878596926961708
     second: taiga__114
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -365,10 +365,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -407,6 +409,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -418,6 +422,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -430,6 +435,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -442,6 +448,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2872,9 +2892,124 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      taiga__0: -6807672954853409120
+      taiga__1: -3979517512423548242
+      taiga__10: -3840002340070137283
+      taiga__100: 8846488801657270941
+      taiga__101: -1723876862211097391
+      taiga__102: -4556632566904561216
+      taiga__103: -3096353947741389666
+      taiga__104: -5905613925035723299
+      taiga__105: 3565605879497508375
+      taiga__106: -8901924762305044151
+      taiga__107: 3685627152404857653
+      taiga__108: -974342661236043389
+      taiga__109: -2672132457619035105
+      taiga__11: -644528920781059624
+      taiga__110: -3270483055276163001
+      taiga__111: 1710033265059460011
+      taiga__112: 855200023264040027
+      taiga__113: -5881696837901258393
+      taiga__114: 8677878596926961708
+      taiga__12: -964858512029338647
+      taiga__13: 6173959579684417464
+      taiga__14: -5093980685004009410
+      taiga__15: 5609078159233461225
+      taiga__16: 2987877751694196698
+      taiga__17: -6784649003634077934
+      taiga__18: 3384748498176123853
+      taiga__19: -3026375628455293609
+      taiga__2: 4410097148273075029
+      taiga__20: 4472053399843798703
+      taiga__21: -8016946351556483513
+      taiga__22: -2429432906885607773
+      taiga__23: 5165930314577635480
+      taiga__24: -217957658689101519
+      taiga__25: 1289504874067146937
+      taiga__26: -6074835294156022904
+      taiga__27: 4472669256230892224
+      taiga__28: 7616456870626435768
+      taiga__29: -1264558861957617618
+      taiga__3: -6798487205897736127
+      taiga__30: 6239490332971586428
+      taiga__31: 7413149449519009602
+      taiga__32: 8430418296300727541
+      taiga__33: -635136173425361201
+      taiga__34: 6735203678890829369
+      taiga__35: 6557725809111151815
+      taiga__36: 5510355387031796909
+      taiga__37: -3410203002743373113
+      taiga__38: -1799203643611920924
+      taiga__39: -9179790393785952466
+      taiga__4: -4305926217844659717
+      taiga__40: 1400867229656311294
+      taiga__41: -8279926398299722096
+      taiga__42: -5386298773393972183
+      taiga__43: -9152959151097086765
+      taiga__44: 4493542799423687005
+      taiga__45: -7132705317423484961
+      taiga__46: 2194721861733594603
+      taiga__47: 6817176939696070804
+      taiga__48: 823836117835457230
+      taiga__49: 5221857201813541854
+      taiga__5: 1923365560880709335
+      taiga__50: -4946163249877455243
+      taiga__51: -7973346306111702516
+      taiga__52: 2537048477088638570
+      taiga__53: 9103183757726012849
+      taiga__54: -7626692595437357171
+      taiga__55: -4597765344166928587
+      taiga__56: 5030912400133796297
+      taiga__57: 3981972322487776487
+      taiga__58: -5314499586970589049
+      taiga__59: -2636754820041442436
+      taiga__6: -5948334924962055328
+      taiga__60: -7790342093170810679
+      taiga__61: -879396756891624700
+      taiga__62: -7498066575517611722
+      taiga__63: -6377148488388926472
+      taiga__64: 7054203933274638098
+      taiga__65: 3530945767296113545
+      taiga__66: 3719853128317938922
+      taiga__67: -923012457331298998
+      taiga__68: -3167421633644160753
+      taiga__69: -4624510397749819989
+      taiga__7: 1087779358265514843
+      taiga__70: 1928731217095212476
+      taiga__71: 4142509065983002874
+      taiga__72: 1765982504586744221
+      taiga__73: 1985315325610704435
+      taiga__74: 5955544767269733277
+      taiga__75: 5195250907284566455
+      taiga__76: -4178108861210878151
+      taiga__77: 4190184974739570728
+      taiga__78: -4179106116759761265
+      taiga__79: 3105300911611839239
+      taiga__8: -1342053314037875928
+      taiga__80: -8757610789197047053
+      taiga__81: 7338841133252850559
+      taiga__82: -4732445794509957043
+      taiga__83: 3915386904478710078
+      taiga__84: -3613753668667315805
+      taiga__85: -2113279764752305432
+      taiga__86: -710619822017234599
+      taiga__87: 6348918581546380959
+      taiga__88: 1104007827108981880
+      taiga__89: -2045353410940706959
+      taiga__9: -6818666748561786238
+      taiga__90: -1595950604290756135
+      taiga__91: 6717198056762095177
+      taiga__92: 2730931209487136612
+      taiga__93: -2663101903667274514
+      taiga__94: -5170157769505645015
+      taiga__95: -5780924939408897528
+      taiga__96: 4010345192445098778
+      taiga__97: -299888692682308671
+      taiga__98: 7295334794012407272
+      taiga__99: -570766870615951478
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

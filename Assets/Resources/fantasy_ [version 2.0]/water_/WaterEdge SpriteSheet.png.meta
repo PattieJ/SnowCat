@@ -243,7 +243,7 @@ TextureImporter:
       213: -7932422415736935175
     second: WaterEdge SpriteSheet_79
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -260,10 +260,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -302,6 +304,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -313,6 +317,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -325,6 +330,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -337,6 +343,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2032,9 +2052,89 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      WaterEdge SpriteSheet_0: -1198298459644125085
+      WaterEdge SpriteSheet_1: 7844032283564232608
+      WaterEdge SpriteSheet_10: 9199062855569422910
+      WaterEdge SpriteSheet_11: -684483604002077691
+      WaterEdge SpriteSheet_12: -9200503296389787475
+      WaterEdge SpriteSheet_13: -1893802788432545035
+      WaterEdge SpriteSheet_14: 7176560856968425721
+      WaterEdge SpriteSheet_15: 958697001657415023
+      WaterEdge SpriteSheet_16: 2911255119536721959
+      WaterEdge SpriteSheet_17: -5176584142259257462
+      WaterEdge SpriteSheet_18: 3750195011513471448
+      WaterEdge SpriteSheet_19: -2268641869141777692
+      WaterEdge SpriteSheet_2: -5949726351896166747
+      WaterEdge SpriteSheet_20: 8878141905748212543
+      WaterEdge SpriteSheet_21: 8364194008386478362
+      WaterEdge SpriteSheet_22: 8331708756891693206
+      WaterEdge SpriteSheet_23: 3782758535763265197
+      WaterEdge SpriteSheet_24: -8946356934390966383
+      WaterEdge SpriteSheet_25: -1996089652507339767
+      WaterEdge SpriteSheet_26: -6991713701890564196
+      WaterEdge SpriteSheet_27: -8716875788599319213
+      WaterEdge SpriteSheet_28: -382192027517004869
+      WaterEdge SpriteSheet_29: 8355889466448462628
+      WaterEdge SpriteSheet_3: 1556883197472522522
+      WaterEdge SpriteSheet_30: 8425311481809155365
+      WaterEdge SpriteSheet_31: -4930152231370622338
+      WaterEdge SpriteSheet_32: 6526535512804571626
+      WaterEdge SpriteSheet_33: -5650357420801236108
+      WaterEdge SpriteSheet_34: 7701240620053493920
+      WaterEdge SpriteSheet_35: -922901792952579537
+      WaterEdge SpriteSheet_36: -6686816986044115643
+      WaterEdge SpriteSheet_37: 5539706899342911950
+      WaterEdge SpriteSheet_38: -613074345812267703
+      WaterEdge SpriteSheet_39: -8794854648896015542
+      WaterEdge SpriteSheet_4: 1113217221986113164
+      WaterEdge SpriteSheet_40: 5516599518418588616
+      WaterEdge SpriteSheet_41: -4668281245333637281
+      WaterEdge SpriteSheet_42: 1477470880279946715
+      WaterEdge SpriteSheet_43: 775681302760957707
+      WaterEdge SpriteSheet_44: -1496147638168354551
+      WaterEdge SpriteSheet_45: -8348159243524756546
+      WaterEdge SpriteSheet_46: -3466758227759237457
+      WaterEdge SpriteSheet_47: 1860423937351494904
+      WaterEdge SpriteSheet_48: 4913201436590258882
+      WaterEdge SpriteSheet_49: 214417983438888335
+      WaterEdge SpriteSheet_5: -2514308578272991005
+      WaterEdge SpriteSheet_50: -2893085864804487314
+      WaterEdge SpriteSheet_51: -7250827459869945739
+      WaterEdge SpriteSheet_52: -8495278911343916490
+      WaterEdge SpriteSheet_53: -2998136689773948487
+      WaterEdge SpriteSheet_54: 8509859845522234840
+      WaterEdge SpriteSheet_55: -1660561842234319730
+      WaterEdge SpriteSheet_56: -4481253642440178940
+      WaterEdge SpriteSheet_57: -6558478500404772076
+      WaterEdge SpriteSheet_58: 4690594644021819083
+      WaterEdge SpriteSheet_59: 7327526491520732563
+      WaterEdge SpriteSheet_6: 6741083689631236600
+      WaterEdge SpriteSheet_60: -4949773122744959658
+      WaterEdge SpriteSheet_61: -8365008291567984820
+      WaterEdge SpriteSheet_62: 6166361628745592505
+      WaterEdge SpriteSheet_63: -7642279404171823924
+      WaterEdge SpriteSheet_64: 2836949982582656488
+      WaterEdge SpriteSheet_65: 4409410851704572013
+      WaterEdge SpriteSheet_66: -8577648641614331498
+      WaterEdge SpriteSheet_67: 5934311206214265766
+      WaterEdge SpriteSheet_68: -8494697717507244576
+      WaterEdge SpriteSheet_69: 183224849960825478
+      WaterEdge SpriteSheet_7: 4007732904707471327
+      WaterEdge SpriteSheet_70: -8921538341443574130
+      WaterEdge SpriteSheet_71: 135963922707368590
+      WaterEdge SpriteSheet_72: 5726106493654093672
+      WaterEdge SpriteSheet_73: -4838069132626709969
+      WaterEdge SpriteSheet_74: 5248467136539236290
+      WaterEdge SpriteSheet_75: 7191623832410389010
+      WaterEdge SpriteSheet_76: 7046636005878504029
+      WaterEdge SpriteSheet_77: -1157935257421189103
+      WaterEdge SpriteSheet_78: 7178656963299500614
+      WaterEdge SpriteSheet_79: -7932422415736935175
+      WaterEdge SpriteSheet_8: -7998368600563629170
+      WaterEdge SpriteSheet_9: -8393212488866217294
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
