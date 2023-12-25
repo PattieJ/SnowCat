@@ -141,7 +141,7 @@ TextureImporter:
       213: -1470877029548711758
     second: forest_ [bridgeHorizontal]_45
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -158,10 +158,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -200,6 +202,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -211,6 +215,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -223,6 +228,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -235,6 +241,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1216,9 +1236,55 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      forest_ [bridgeHorizontal]_0: -4456393500193168342
+      forest_ [bridgeHorizontal]_1: 7539350827564281801
+      forest_ [bridgeHorizontal]_10: 4970255074493293600
+      forest_ [bridgeHorizontal]_11: -4202570633435518086
+      forest_ [bridgeHorizontal]_12: 2822995205471373316
+      forest_ [bridgeHorizontal]_13: -1382893327454153439
+      forest_ [bridgeHorizontal]_14: 135500085105191989
+      forest_ [bridgeHorizontal]_15: -6437856321552537812
+      forest_ [bridgeHorizontal]_16: 6038914879957042137
+      forest_ [bridgeHorizontal]_17: 6217672344342535948
+      forest_ [bridgeHorizontal]_18: -2925054233789740807
+      forest_ [bridgeHorizontal]_19: -1729119425329777432
+      forest_ [bridgeHorizontal]_2: -9148921130712519529
+      forest_ [bridgeHorizontal]_20: 3193512471381011593
+      forest_ [bridgeHorizontal]_21: -7686357886492207453
+      forest_ [bridgeHorizontal]_22: -8166530372288867181
+      forest_ [bridgeHorizontal]_23: -846147369064401190
+      forest_ [bridgeHorizontal]_24: 6409292406271158651
+      forest_ [bridgeHorizontal]_25: -3709438697015361222
+      forest_ [bridgeHorizontal]_26: -5712678358815676969
+      forest_ [bridgeHorizontal]_27: -7046107653767803759
+      forest_ [bridgeHorizontal]_28: -2140214675572118231
+      forest_ [bridgeHorizontal]_29: 2221522137004916425
+      forest_ [bridgeHorizontal]_3: 6541852623241336545
+      forest_ [bridgeHorizontal]_30: 6780657633410539867
+      forest_ [bridgeHorizontal]_31: 5756815450230053256
+      forest_ [bridgeHorizontal]_32: -8516833799940295928
+      forest_ [bridgeHorizontal]_33: -7225970052581036213
+      forest_ [bridgeHorizontal]_34: -617530396026827318
+      forest_ [bridgeHorizontal]_35: 7128823634228154282
+      forest_ [bridgeHorizontal]_36: 2215231480247568431
+      forest_ [bridgeHorizontal]_37: 4777353843701535840
+      forest_ [bridgeHorizontal]_38: -315694554054246793
+      forest_ [bridgeHorizontal]_39: 8265000582388125881
+      forest_ [bridgeHorizontal]_4: -4586636523039333559
+      forest_ [bridgeHorizontal]_40: -1523610211591381679
+      forest_ [bridgeHorizontal]_41: 4318112637153304662
+      forest_ [bridgeHorizontal]_42: -515018787696657251
+      forest_ [bridgeHorizontal]_43: -2327860354755453510
+      forest_ [bridgeHorizontal]_44: -7156590163758014737
+      forest_ [bridgeHorizontal]_45: -1470877029548711758
+      forest_ [bridgeHorizontal]_5: 4997872692437807623
+      forest_ [bridgeHorizontal]_6: 501036056784220686
+      forest_ [bridgeHorizontal]_7: 7554068121641599427
+      forest_ [bridgeHorizontal]_8: -141127839030196838
+      forest_ [bridgeHorizontal]_9: 7312908840479295437
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

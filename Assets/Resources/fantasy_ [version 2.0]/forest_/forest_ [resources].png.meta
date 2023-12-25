@@ -234,7 +234,7 @@ TextureImporter:
       213: -8272669271580645141
     second: forest_ [resources]_76
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -251,10 +251,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -293,6 +295,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -304,6 +308,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -316,6 +321,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -328,6 +334,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1960,9 +1980,86 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      forest_ [resources]_0: 7894740091292667399
+      forest_ [resources]_1: 3019040352853377591
+      forest_ [resources]_10: 309223966863900782
+      forest_ [resources]_11: -8396024627381086057
+      forest_ [resources]_12: 8611860373421387872
+      forest_ [resources]_13: 3128289193164421384
+      forest_ [resources]_14: 1873952117517293043
+      forest_ [resources]_15: 6835072391291917011
+      forest_ [resources]_16: -6716801743645134397
+      forest_ [resources]_17: 5094672898379893057
+      forest_ [resources]_18: 7933584912820182276
+      forest_ [resources]_19: -4878340616857800940
+      forest_ [resources]_2: -6605258144222842400
+      forest_ [resources]_20: 1808139627112315629
+      forest_ [resources]_21: -2899189577595985405
+      forest_ [resources]_22: -5780623273772650115
+      forest_ [resources]_23: 6569403964279985187
+      forest_ [resources]_24: -1664360450863958514
+      forest_ [resources]_25: 5780170026046184495
+      forest_ [resources]_26: -4715988792179109947
+      forest_ [resources]_27: 3936254566473464411
+      forest_ [resources]_28: -2642706314171204937
+      forest_ [resources]_29: -1848895694802593071
+      forest_ [resources]_3: -3608815245255208948
+      forest_ [resources]_30: 4291044640442212974
+      forest_ [resources]_31: -6421172574369478704
+      forest_ [resources]_32: 5843295228607677769
+      forest_ [resources]_33: 4003803388131567500
+      forest_ [resources]_34: 2185095214895425303
+      forest_ [resources]_35: -1348297886304518959
+      forest_ [resources]_36: 5222261964092278511
+      forest_ [resources]_37: 7099261254546156644
+      forest_ [resources]_38: 8914219852027167755
+      forest_ [resources]_39: 3263303212960866169
+      forest_ [resources]_4: 5236155219266044449
+      forest_ [resources]_40: 7334498754739342881
+      forest_ [resources]_41: -1777675648544310096
+      forest_ [resources]_42: -4691430117508813643
+      forest_ [resources]_43: 8895910591923455891
+      forest_ [resources]_44: -2757139725585175935
+      forest_ [resources]_45: 7040910224047721498
+      forest_ [resources]_46: 3422541256615967132
+      forest_ [resources]_47: -6687465149754951720
+      forest_ [resources]_48: 266409513753969926
+      forest_ [resources]_49: -5823890989954616429
+      forest_ [resources]_5: 3209689938956724051
+      forest_ [resources]_50: 2273677534684172700
+      forest_ [resources]_51: -599999509650601498
+      forest_ [resources]_52: -6992890590118980730
+      forest_ [resources]_53: 1741798332403881498
+      forest_ [resources]_54: -3462129744000885686
+      forest_ [resources]_55: -8892448267904231259
+      forest_ [resources]_56: -2553850610303199837
+      forest_ [resources]_57: -327298328786762323
+      forest_ [resources]_58: -4548611754792248402
+      forest_ [resources]_59: -807783303784275034
+      forest_ [resources]_6: -918247824443769853
+      forest_ [resources]_60: 1256968649261073405
+      forest_ [resources]_61: 2142962290194250820
+      forest_ [resources]_62: -7021638489668328356
+      forest_ [resources]_63: 8589621402110534760
+      forest_ [resources]_64: 5818912568423474
+      forest_ [resources]_65: -3993118836337925706
+      forest_ [resources]_66: -5451230947296154237
+      forest_ [resources]_67: 9135555820057264715
+      forest_ [resources]_68: -7955468358792950440
+      forest_ [resources]_69: -6630214613054640496
+      forest_ [resources]_7: -961870665426790156
+      forest_ [resources]_70: 4681705842308764812
+      forest_ [resources]_71: 2098838844845151797
+      forest_ [resources]_72: -3440550283215637378
+      forest_ [resources]_73: -7082893614762276948
+      forest_ [resources]_74: 3941790396759376160
+      forest_ [resources]_75: -7091191024805925276
+      forest_ [resources]_76: -8272669271580645141
+      forest_ [resources]_8: 7513275199330600606
+      forest_ [resources]_9: 6932624107524769134
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

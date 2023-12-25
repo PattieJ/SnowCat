@@ -516,7 +516,7 @@ TextureImporter:
       213: 89898995797283574
     second: cave__170
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -533,10 +533,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -575,6 +577,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -586,6 +590,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -598,6 +603,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -610,6 +616,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -4216,9 +4236,180 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      cave__0: 4684431295761196694
+      cave__1: 4231307440020065184
+      cave__10: -4491316384963986792
+      cave__100: 711101382802717686
+      cave__101: -3606998428527139945
+      cave__102: -1427702848113587898
+      cave__103: 7513624660374925225
+      cave__104: 909768254399704960
+      cave__105: -1723830851054654603
+      cave__106: 5058768430749255970
+      cave__107: 5556161474437583174
+      cave__108: 279465362800119818
+      cave__109: 6437261230488191410
+      cave__11: -1797468485785201211
+      cave__110: -7982616255446171878
+      cave__111: 78485908290207399
+      cave__112: -1784787347586471678
+      cave__113: -9060043589368081680
+      cave__114: -1086950040863965430
+      cave__115: 8319351178297741374
+      cave__116: -3721554078479397587
+      cave__117: 6960335377412476208
+      cave__118: -7359719249098975367
+      cave__119: 6303694097478548411
+      cave__12: -7723629216949627650
+      cave__120: -4182555152117487581
+      cave__121: 3926157716875223730
+      cave__122: 793814961847302326
+      cave__123: -9130480182226081058
+      cave__124: 764241439837240825
+      cave__125: 2337082629545603412
+      cave__126: -1289317561610955815
+      cave__127: -8491330228075010562
+      cave__128: 3601865471530148975
+      cave__129: 7843628819430285704
+      cave__13: 6659400307711439223
+      cave__130: 7910942634276350736
+      cave__131: 7788741963674399443
+      cave__132: 1516919466752688711
+      cave__133: -7852738830789911846
+      cave__134: 2935482727906696985
+      cave__135: -1675193146517957333
+      cave__136: 4150424149054069981
+      cave__137: -2960453973324835663
+      cave__138: -21868329258154575
+      cave__139: 5776051239334406090
+      cave__14: -1827810874704575346
+      cave__140: 7550945114518041852
+      cave__141: -2675719316312992019
+      cave__142: -7506271731779208537
+      cave__143: 1887523879377766413
+      cave__144: 4475616535674832395
+      cave__145: -993932792675280343
+      cave__146: -6136250173496647891
+      cave__147: -5182557951247646329
+      cave__148: -8490354284896788
+      cave__149: -4608273855856557683
+      cave__15: -5176356928634644423
+      cave__150: 4963529908837621848
+      cave__151: -4298137607894465770
+      cave__152: -6196147912262683443
+      cave__153: 4036261336052593434
+      cave__154: -4339212121607298023
+      cave__155: 2624312212260637842
+      cave__156: 2788616000062214194
+      cave__157: -3201294364778694463
+      cave__158: -1232059742418185982
+      cave__159: -7179470981316186891
+      cave__16: 6205342457549849609
+      cave__160: 8061284601949205039
+      cave__161: 3878852433987933697
+      cave__162: -9016605166342322339
+      cave__163: 52761700698184696
+      cave__164: -876989487167805677
+      cave__165: -4556680976692061029
+      cave__166: 6022376506662741596
+      cave__167: -5779836188742102937
+      cave__168: 3890791520110526557
+      cave__169: -2019380104082048706
+      cave__17: 3312090650776461166
+      cave__170: 89898995797283574
+      cave__18: 4497876843453911937
+      cave__19: -4134276154561081009
+      cave__2: 3310682189361501104
+      cave__20: 6324514707768986556
+      cave__21: -7501802867039153627
+      cave__22: -3455646730048921204
+      cave__23: 4562757371617540635
+      cave__24: -6393860966241399893
+      cave__25: -457252257800595510
+      cave__26: -6603468601297803546
+      cave__27: 455047512962895341
+      cave__28: -6232437917873841377
+      cave__29: -6649565704601699753
+      cave__3: 2258078091778152065
+      cave__30: 6514067066205238440
+      cave__31: 2916214020560853498
+      cave__32: 6144228397707167211
+      cave__33: -2875461711138566609
+      cave__34: 9036070029347254958
+      cave__35: 4128386845678868609
+      cave__36: 7955047852057784791
+      cave__37: 451467939783813003
+      cave__38: -4571081992461667166
+      cave__39: -5044099989202267627
+      cave__4: 6685170011682610276
+      cave__40: 382861134366794201
+      cave__41: -4836756988323142521
+      cave__42: -7177007683381080295
+      cave__43: -1323873846768253567
+      cave__44: 6096043658566474349
+      cave__45: -7161852565445221652
+      cave__46: 7017128642217238840
+      cave__47: 2230818030094802584
+      cave__48: 337592992835035935
+      cave__49: -5020759222161237536
+      cave__5: 279281493074610084
+      cave__50: 7303772852996839662
+      cave__51: -5060371765283639922
+      cave__52: -8796182403545675644
+      cave__53: -3140366748702562136
+      cave__54: -960528044737873071
+      cave__55: 6944878641443740813
+      cave__56: -3187138663668855361
+      cave__57: 6283438722442184323
+      cave__58: -3706659963389426025
+      cave__59: 1571605596071883518
+      cave__6: -64565068107172207
+      cave__60: 8376094927762501838
+      cave__61: -933179004680012933
+      cave__62: -8249807933684611131
+      cave__63: -1415186034456729233
+      cave__64: -2105177961042547002
+      cave__65: 1459858600162424315
+      cave__66: 4452374093189985957
+      cave__67: 3612792985043934118
+      cave__68: 6390269292285455605
+      cave__69: 8832765064034374477
+      cave__7: -7704252143818524523
+      cave__70: 5881727954050404700
+      cave__71: 8116381981277910700
+      cave__72: 1719005029648974081
+      cave__73: 717586810681810332
+      cave__74: 2482296285266228576
+      cave__75: -5940275338225670025
+      cave__76: -59319746231573642
+      cave__77: 6759576398462800267
+      cave__78: 7202002296732840267
+      cave__79: -1163792873929847138
+      cave__8: -5533713903455412036
+      cave__80: -5786551001078679584
+      cave__81: -8875636756254927229
+      cave__82: 8939323737923975503
+      cave__83: 6659251474526400412
+      cave__84: -2776130838509162996
+      cave__85: -1061709134181699797
+      cave__86: -529443322203197971
+      cave__87: 2531029391912322303
+      cave__88: -946949496833976662
+      cave__89: -3319666948769701826
+      cave__9: 3853896616157212826
+      cave__90: -1817016948992187731
+      cave__91: -5687451623413003388
+      cave__92: 1027168245965009241
+      cave__93: 3999775173089452459
+      cave__94: -6254201677709090212
+      cave__95: 7280221396769876137
+      cave__96: -6499819424087943595
+      cave__97: -541656340620321860
+      cave__98: 8119556449448069533
+      cave__99: 3445820134174240655
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

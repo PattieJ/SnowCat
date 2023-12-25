@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 341e0c21b13640540bbcccdc9d32d9b0
+guid: 43847eed4b1b3d24e913a1ef4c630b81
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7267828462667370698
-    second: Setting menu_0
+      213: 8382717070696663976
+    second: spikes_0
   - first:
-      213: -7390560224966502635
-    second: Setting menu_1
+      213: -2244080383998043531
+    second: spikes_1
+  - first:
+      213: -7836376798481834204
+    second: spikes_2
+  - first:
+      213: -8328159106608433595
+    second: spikes_3
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -129,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Setting menu_0
+      name: spikes_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 10
-        width: 106
-        height: 122
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac013cdea738cd460800000000000000
-      internalID: 7267828462667370698
+      spriteID: 8ab4a7323c4655470800000000000000
+      internalID: 8382717070696663976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Setting menu_1
+      name: spikes_1
       rect:
         serializedVersion: 2
-        x: 139
-        y: 10
-        width: 106
-        height: 122
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,8 +170,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5179dbbd1a47f6990800000000000000
-      internalID: -7390560224966502635
+      spriteID: 57adf58c7cc6bd0e0800000000000000
+      internalID: -2244080383998043531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spikes_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f906812d89f3390800000000000000
+      internalID: -7836376798481834204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spikes_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5467ba1ca6f6c6c80800000000000000
+      internalID: -8328159106608433595
       vertices: []
       indices: 
       edges: []
@@ -181,8 +229,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Setting menu_0: 7267828462667370698
-      Setting menu_1: -7390560224966502635
+      spikes_0: 8382717070696663976
+      spikes_1: -2244080383998043531
+      spikes_2: -7836376798481834204
+      spikes_3: -8328159106608433595
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

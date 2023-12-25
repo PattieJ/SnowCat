@@ -57,7 +57,7 @@ TextureImporter:
       213: 678582238918135224
     second: WaterFall Tile SpriteSheet_17
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -74,10 +74,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -116,6 +118,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -127,6 +131,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -139,6 +144,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -151,6 +157,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -544,9 +564,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      WaterFall Tile SpriteSheet_0: -528669364903330991
+      WaterFall Tile SpriteSheet_1: -4555293105865370599
+      WaterFall Tile SpriteSheet_10: -8189508752112121606
+      WaterFall Tile SpriteSheet_11: 8912539090854036058
+      WaterFall Tile SpriteSheet_12: 4215818775764654436
+      WaterFall Tile SpriteSheet_13: -3792730593468844555
+      WaterFall Tile SpriteSheet_14: 2277228087452105806
+      WaterFall Tile SpriteSheet_15: 8951876244792413139
+      WaterFall Tile SpriteSheet_16: 6539221428596968186
+      WaterFall Tile SpriteSheet_17: 678582238918135224
+      WaterFall Tile SpriteSheet_2: -6489542465573013233
+      WaterFall Tile SpriteSheet_3: 151958737306114665
+      WaterFall Tile SpriteSheet_4: -4084052309864401638
+      WaterFall Tile SpriteSheet_5: 6869130282562801669
+      WaterFall Tile SpriteSheet_6: 2412428957185444975
+      WaterFall Tile SpriteSheet_7: -2017600034520521087
+      WaterFall Tile SpriteSheet_8: 2698079595073509868
+      WaterFall Tile SpriteSheet_9: 5760165047979153822
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
