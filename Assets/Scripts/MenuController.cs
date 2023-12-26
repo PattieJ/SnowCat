@@ -6,12 +6,6 @@ public class MenuController : MonoBehaviour
 {
     public GameObject MenuList;
     [SerializeField] private bool MenuFlag = true;
-    void Start()
-    {
-        
-    }
-
-    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))

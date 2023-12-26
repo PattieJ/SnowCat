@@ -23,6 +23,10 @@ public class SwimCatController : MonoBehaviour
         {
             Swim();
         }
+        if(transform.position.y > waterSurfaceY)
+        {
+            bubblePS.Stop();
+        }
 
     }
 

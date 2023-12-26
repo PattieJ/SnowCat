@@ -449,13 +449,33 @@ bug: 猫猫不能跳出画面
 
 11. 在playercontroller里改写脚本(当触发swim的时候play)
 
-### 10. 猫猫吃到小鱼时有爱心动画&变成雪花进入UI系统
+### 10. 猫猫吃到小鱼时有爱心动画& 变成雪花进入UI系统
 
 
 
 ### 11. 给水底加背景
 
 <img src=".\reportsAsserts\swimCatbg.png" alt="image-20231226223424824" style="zoom:50%;" />
+
+### 12. 开始游戏的UI设计
+
+逻辑：闪烁空格+文字，按下空格时开始游戏
+
+1. 空格闪烁：创建空格闪烁的anim
+
++ 增加空白帧：将时间轴移动到下一秒，点录制，然后隐藏该anim
+
+  <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\space.png" alt="image-20231227010424783" style="zoom:50%;" />
+
+2. 因为字体比较糊，所以尝试使用textmeshpro插件
+
+3. 开始时暂停状态，但仍希望播放anim动画，修改如下
+
+   <img src=".\reportsAsserts\timescaleAnim.png" alt="image-20231227024204756" style="zoom:50%;" />
+
+4. 
+
+### 13. 加一些小动物和装饰品丰富场景
 
 关于场景设计的新的想法：在角色半径内设置光源，随着天数逐渐点亮场景画面
 
