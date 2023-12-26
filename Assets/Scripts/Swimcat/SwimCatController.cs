@@ -6,6 +6,7 @@ public class SwimCatController : MonoBehaviour
 {
     public Vector2 swim = new Vector2(0,5);
     public float waterSurfaceY = 5.5f;
+    public ParticleSystem bubblePS;
     private Animator animator;
     private Rigidbody2D rb;
     // Start is called before the first frame update
@@ -18,24 +19,18 @@ public class SwimCatController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && transform.position.y < waterSurfaceY)
         {
-            animator.SetBool("IsSwim", true);
-            rb.velocity = swim;
+            Swim();
         }
-        else
-        {
-            animator.SetBool("IsSwim", false);
-        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Edge") && transform.position.y < waterSurfaceY)
         {
-            //Debug.Log("1");
-            animator.SetBool("IsSwim", false);
-            animator.SetBool("IsUp", true);
+            Up();
         }
     }
 
@@ -61,11 +56,30 @@ public class SwimCatController : MonoBehaviour
         if (collision.gameObject.CompareTag("spikes"))
         {
             animator.ResetTrigger("hit");
+
         }
+    }
+    private void Swim()
+    {
+        animator.SetBool("IsSwim", true);
+        rb.velocity = swim;
+        playBubble();
+    }
+
+    private void Up()
+    {
+        //Debug.Log("1");
+        //animator.SetBool("IsSwim", false);
+        animator.SetBool("IsUp", true);
     }
 
     private void hit()
     {
         animator.SetTrigger("hit");
+    }
+
+    private void playBubble()
+    {
+        bubblePS.Play();
     }
 }

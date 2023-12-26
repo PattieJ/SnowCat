@@ -447,9 +447,11 @@ bug: 猫猫不能跳出画面
 
     <img src=".\reportsAsserts\bubble.png" alt="image-20231226231846112" style="zoom:50%;" />
 
-11. 在playercontroller里改写脚本
+11. 在playercontroller里改写脚本(当触发swim的时候play)
 
 ### 10. 猫猫吃到小鱼时有爱心动画&变成雪花进入UI系统
+
+
 
 ### 11. 给水底加背景
 
