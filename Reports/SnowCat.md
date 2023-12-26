@@ -296,11 +296,9 @@ PlanB:
 
 水花效果思路：使用Polygon Collider2D检测碰撞，当存在碰撞的时候，使用粒子系统发射水花动画
 
-在油管上找到了水花的 [制作教程](https://www.youtube.com/watch?v=0Kt7gLaoB18)，好强的印度姐姐
+在油管上找到了水花的 [制作教程](https://www.youtube.com/watch?v=0Kt7gLaoB18)
 
----------------
-
-感觉这种方式还是太假了，尝试用回原始的2D的像素帧的方式吧
+但感觉这种方式还是太假了，尝试用回原始的2D的像素帧的方式吧
 
 问题1： 缝隙问题
 
@@ -316,7 +314,7 @@ PlanB:
 
 问题3：出入水时的水花制作
 
-DONE
+DONE，splash挂载在water上，设置的y轴为-1
 
 ### 4. 氧气条和记分UI
 
@@ -348,8 +346,13 @@ DONE
    + 随机生成小鱼
 3. 吃到小鱼有动画效果
    + 制作一个smoke的animi动画，并把looptime关掉
+   
+     <img src=".\reportsAsserts\looptime.png" alt="image-20231226222624434" style="zoom:50%;" />
+   
    + 给小鱼添加碰撞并打开trigger
+   
    + 碰撞后隐藏小鱼并激活smoke效果
+   
    + 最后destroy掉父类
 
 ### 6. 尖刺设置
@@ -359,6 +362,11 @@ DONE
   done
 
 + cat hit动画
+
+  + 先制作一个hit的anim
+  + 在animator中，将any state与hit相连，表示任何情况下都能可能触发死亡
+  + 遇到的困难：进入hit状态后无法退出了
+    + 连接到Exit（这样子的效果是当长时间处于碰撞时，也会来回切换）
 
 + 尖刺碰撞检测(难点)
 
@@ -403,6 +411,49 @@ DONE
 
 调整触发anim动画的方式和碰撞体大小的设置，稍微合理了一些
 
+bug: 猫猫不能跳出画面
+
 ### 8. 氧气条耗尽之后游戏结束
 
-9.关于场景设计的新的想法：在角色半径内设置光源，随着天数逐渐点亮场景画面
+### 9. 猫猫游泳时有泡泡动画(考虑使用粒子系统)
+
+1. 给player添加粒子系统
+
+2. 在renderer层调整layer
+
+3. 在renderer层将material改为方块的default
+
+4. 把PS的位置挪到脚下
+
+5. 修改start size
+
+   <img src=".\reportsAsserts\startsize.png" alt="image-20231226225258009" style="zoom:50%;" />
+
+6. 在shape层里调整shape和scale
+
+   <img src=".\reportsAsserts\shape.png" alt="image-20231226225513088" style="zoom:50%;" />
+
+7. 调整粒子系统的移动方向
+
+   <img src=".\reportsAsserts\velocity" alt="image-20231226225720504" style="zoom:50%;" />
+
+8. 在color of lifetime层调节颜色，上面两个点负责透明度
+
+   <img src=".\reportsAsserts\color.png" alt="image-20231226231101677" style="zoom:50%;" />
+
+9. 把looping关掉，把play on awake关掉
+
+10. 在此处mode改为sprite，将切割好的泡泡素材贴入
+
+    <img src=".\reportsAsserts\bubble.png" alt="image-20231226231846112" style="zoom:50%;" />
+
+11. 在playercontroller里改写脚本
+
+### 10. 猫猫吃到小鱼时有爱心动画&变成雪花进入UI系统
+
+### 11. 给水底加背景
+
+<img src=".\reportsAsserts\swimCatbg.png" alt="image-20231226223424824" style="zoom:50%;" />
+
+关于场景设计的新的想法：在角色半径内设置光源，随着天数逐渐点亮场景画面
+
