@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: spikes_2_Anim
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
-  - {fileID: -7836376798481834204, guid: 43847eed4b1b3d24e913a1ef4c630b81, type: 3}
-  - {fileID: -8328159106608433595, guid: 43847eed4b1b3d24e913a1ef4c630b81, type: 3}
-  - {fileID: 8382717070696663976, guid: 43847eed4b1b3d24e913a1ef4c630b81, type: 3}
-  - {fileID: -2244080383998043531, guid: 43847eed4b1b3d24e913a1ef4c630b81, type: 3}
+  - {fileID: -1142090774, guid: 05101e2509d305049a65931b7dade647, type: 3}
+  - {fileID: 854689269, guid: 05101e2509d305049a65931b7dade647, type: 3}
+  - {fileID: 1553385638, guid: 05101e2509d305049a65931b7dade647, type: 3}
   m_MinSpeed: 2
   m_MaxSpeed: 2
   m_AnimationStartTime: 0
