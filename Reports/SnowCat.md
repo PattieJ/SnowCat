@@ -473,7 +473,7 @@ bug: 猫猫不能跳出画面
 
    <img src=".\reportsAsserts\timescaleAnim.png" alt="image-20231227024204756" style="zoom:50%;" />
 
-4. 
+4. 后面改一改space
 
 ### 13. 加一些小动物和装饰品丰富场景
 
