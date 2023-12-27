@@ -48,7 +48,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   snowScore: 500
   GetScore: {fileID: 6118654664394581013, guid: 1c676c75e77a44d59bea833766f27825, type: 3}
+  SnowMiss: {fileID: 3021903140694560937, guid: 280a1f9ab85744f0d88b2adf9bbbf049, type: 3}
   JudgeCircle: {fileID: 4212055339298138306, guid: d643032189b524a1597375fa7cf52d00, type: 3}
+  scaleSpeed: 1.5
 --- !u!1 &7716829684054301165
 GameObject:
   m_ObjectHideFlags: 0
