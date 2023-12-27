@@ -7,8 +7,12 @@ public class SwimCatController : MonoBehaviour
     public Vector2 swim = new Vector2(0,5);
     public float waterSurfaceY = 5.5f;
     public ParticleSystem bubblePS;
+    public SwimCatHealth swimCatHealth;
+
     private Animator animator;
     private Rigidbody2D rb;
+    [SerializeField] private float hitAmount = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -60,7 +64,7 @@ public class SwimCatController : MonoBehaviour
         if (collision.gameObject.CompareTag("spikes"))
         {
             animator.ResetTrigger("hit");
-
+            swimCatHealth.hitHealth(hitAmount);
         }
     }
     private void Swim()
@@ -86,4 +90,6 @@ public class SwimCatController : MonoBehaviour
     {
         bubblePS.Play();
     }
+
+
 }

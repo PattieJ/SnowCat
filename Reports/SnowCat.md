@@ -316,25 +316,56 @@ PlanB:
 
 DONE，splash挂载在water上，设置的y轴为-1
 
-### 4. 氧气条和记分UI
+### 4. 人物头像、氧气条、记分UI
 
-1. 创建UI 的 canvas并添加image，将frame拖入，点击set native size恢复尺寸
++ #### 创建人物头像
+
+  + 在canvas里创建一个image，导入框框，调整位置
+
+  + 制作头像
+
+    + 在image里再创建一个image，命名为cut，此时为一个和frame相同大小的白色框框
+
+    + 在cut里再创建一个image，命名为face，拖入idle状态的图片，调整位置至只有头在框框里
+
+      <img src=".\reportsAsserts\face.png" alt="image-20231227134426888" style="zoom:50%;" />
+
+    + 在cut中添加一个组件 `mask`，再取消 show mask graphic
+
+      <img src=".\reportsAsserts\mask.png" alt="image-20231227134351693" style="zoom:50%;" />
+
+    + 移动cut到合适的位置
+
++ #### 创建氧气条UI
+
+1. 创建UI 的 canvas并添加image，将frame拖入，点击**set native size**恢复尺寸
 
    <img src=".\reportsAsserts\setSize.png" alt="image-20231220023042251" style="zoom:50%;" />
 
-2. 再添加一个image，将fill拖入，移动到合适位置并设置合适的图层关系之后，新建一个空的gameobjcet包含frame和fill
+2. 再添加一个image，将fill拖入，移动到合适位置并设置合适的图层关系之后，新建一个空的gameobjcet包含frame和fill。
 
    <img src=".\reportsAsserts\healthbar.png" alt="image-20231220143652515" style="zoom:50%;" />
 
-3. 给healthBar添加slider组件，然后对slider进行设置
+3. 将fill的img type进行修改，如下所示，滑动amount可以看见变化（法1）
+
+   <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\fill.png" alt="image-20231227142517216" style="zoom:50%;" />
+
+4. 给healthBar添加slider组件，然后对slider进行设置（法2） 此处用的是silider
 
    <img src=".\reportsAsserts\slider.png" alt="image-20231220143808765" style="zoom:50%;" />
 
-4. 给healthBar添加C#脚本healthbar
+5. 给healthBar添加C#脚本healthbar
 
-5. 给player添加PlayerHealth脚本（设定当猫处于wateredge之下时，血量逐减）
+6. 给player添加PlayerHealth脚本
 
-   
+   + 设定当猫处于wateredge之下时，血量逐减
+   + 当跃出水面时，回血（水面Y轴设置为-0.8）
+
++ #### 创建记分UI
+
+  + 创建雪花框框
+  + 创建文本
+  + 创建脚本，挂载到player上，通过脚本控制文本内容
 
 
 ### 5. 随机出现的小鱼
@@ -415,6 +446,11 @@ bug: 猫猫不能跳出画面
 
 ### 8. 氧气条耗尽之后游戏结束
 
+预计做一个UI动画效果
+
+1. 创建一个空对象作为菜单控制器
+2. 修改panel的尺寸后，将scale设置为0
+
 ### 9. 猫猫游泳时有泡泡动画(考虑使用粒子系统)
 
 1. 给player添加粒子系统
@@ -449,7 +485,7 @@ bug: 猫猫不能跳出画面
 
 11. 在playercontroller里改写脚本(当触发swim的时候play)
 
-### 10. 猫猫吃到小鱼时有爱心动画& 变成雪花进入UI系统
+### 10. 变成雪花进入UI系统
 
 
 
@@ -474,6 +510,8 @@ bug: 猫猫不能跳出画面
    <img src=".\reportsAsserts\timescaleAnim.png" alt="image-20231227024204756" style="zoom:50%;" />
 
 4. 后面改一改space
+
+5. 改动对UImenu，按空格后才出现
 
 ### 13. 加一些小动物和装饰品丰富场景
 
