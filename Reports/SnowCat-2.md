@@ -43,7 +43,9 @@
 
    <img src=".\reportsAssets_2\SnowballSourceImage.png" style="zoom:50%;" />
 
-4. 调整积分条在UI界面的位置 `Position` ，使其位于右上角。
+4.  `Canvas Scaler` → `UI Scale Mode` 设置积分条相对屏幕大小进行缩放与定位，并调整位置 `Position` ，使其位于右上角。
+
+<img src=".\reportsAssets_2\ScaleWithScreen.png" style="zoom:50%;" />
 
 
 
@@ -101,6 +103,7 @@
 
 1. 根据宏定义切割图片后，选中要用到的 `slice` 切片自动生成 `Animation` ，命名为 `GetSnow` 。
 2. 编写脚本 `DeleteGetSnow` ，实现动画播放一遍（即1s）后删除动画对象。
+3. 同样的方式做出雪花Miss时的消失动画 `SnowMiss` 。
 
 
 
@@ -127,6 +130,37 @@
 
 <img src=".\reportsAssets_2\JudgeGradeLevel.png" style="zoom:50%;" />
 
+<img src=".\reportsAssets_2\JudgeMissSnow.png" style="zoom:50%;" />
 
 
-## 8.制作MissSnow脚本动画（雪花淡出至消失）
+
+## 8.显示每一个雪花的判定
+
+
+
++ 在 `UI` 中添加 `Text` 对象 `ScoreLevel` ，仿照 `ScoreTable` 的实现逻辑编写代码实现不同判定的显示。
+
+<img src=".\reportsAssets_2\GetScoreLevel.png" style="zoom:50%;" />
+
++ 注：由于 `ScoreLevel` 采用的是 `TextMeshPro` ，在脚本中的使用需要进行一定的变化。
+
+<img src=".\reportsAssets_2\TextMeshPro.png" style="zoom:50%;" />
+
++ 字体选取了系统自带的 `Bangers SDF` 。
+
+<img src=".\reportsAssets_2\FontChoose.png" style="zoom:50%;" />
+
+
+
+## 9.完善雪花的出现逻辑
+
+
+
++ 由于同一时间内最多出现3片雪花，设置两个变量记录前两个雪花的arrowRotation，通过while循环反复使用random，来避免出现相同箭头朝向的雪花。
+
+
+
+## 10.制作生命条
+
+
+

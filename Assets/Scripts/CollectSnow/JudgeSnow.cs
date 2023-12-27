@@ -19,7 +19,8 @@ public class JudgeSnow : MonoBehaviour
     {
         rotationZ = transform.eulerAngles.z;
         collectSnow = GameObject.FindWithTag("GameController").GetComponent<CollectGame>();
-        Circle = Instantiate(JudgeCircle, transform.position, transform.rotation);
+
+        Circle = Instantiate(JudgeCircle, transform.position- new Vector3(0f,0f,2f), transform.rotation);
         Circle.transform.localScale *= 4f;
     }
 
@@ -55,7 +56,7 @@ public class JudgeSnow : MonoBehaviour
 
     private void GetSnow()
     {
-        if(Circle.transform.localScale.x > 2f)
+        if(Circle.transform.localScale.x > 2.5f)
         {
             MissSnow();
             return;
@@ -65,14 +66,17 @@ public class JudgeSnow : MonoBehaviour
         Destroy(Circle);
         if (Mathf.Abs(Circle.transform.localScale.x-1f)<= 0.1f)
         {
+            collectSnow.GetScoreLevel("PERFECT");
             gradeLevel = 1f;
         }
         else if(Mathf.Abs(Circle.transform.localScale.x - 1f) <= 0.3f)
         {
+            collectSnow.GetScoreLevel("GREAT");
             gradeLevel = 0.8f;
         }
         else
         {
+            collectSnow.GetScoreLevel("COMMON");
             gradeLevel = 0.5f;
         }
         collectSnow.AddScore((int)(snowScore *gradeLevel));
@@ -80,7 +84,10 @@ public class JudgeSnow : MonoBehaviour
 
     private void MissSnow()
     {
-        Destroy(gameObject);
+        collectSnow.GetScoreLevel("MISS");
         Destroy(Circle);
+        Destroy(gameObject);
+        Instantiate(SnowMiss, transform.position, transform.rotation);
+
     }
 }
