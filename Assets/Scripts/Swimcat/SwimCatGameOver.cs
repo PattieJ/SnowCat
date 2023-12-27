@@ -11,6 +11,12 @@ public class SwimCatGameOver : MonoBehaviour
     public GameObject UIMenu;
     public Slider slider;
     public float delayBeforeShowingPanel; // 新增的延迟时间
+    public FishGenerator fishGenerator;
+    private int fishNum = 0;
+
+    [SerializeField] private Text scoreText;
+    [SerializeField] private Text overText;
+
     IEnumerator ShowPanel(GameObject gameObject)
     {
         float timer = 0;
@@ -26,12 +32,13 @@ public class SwimCatGameOver : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(slider.value);
-        if (slider.value == 0)
+        fishNum = fishGenerator.fish_count();
+        //Debug.Log(slider.value);
+        if (fishNum == 50 || slider.value == 0)
         {
             UIMenu.SetActive(false);
+            overText.text = scoreText.text;
             StartCoroutine(ShowPanel(panel));
-            
         }
     }
 }

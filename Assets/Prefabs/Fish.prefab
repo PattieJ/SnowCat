@@ -263,9 +263,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Leftmove: {x: 1, y: 0, z: 0}
-  moveSpeed: -2
+  moveSpeed: -5
   cameraLimit: -20
-  scoreText: {fileID: 0}
 --- !u!1 &546891177119111819
 GameObject:
   m_ObjectHideFlags: 0

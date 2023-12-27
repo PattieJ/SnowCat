@@ -13,11 +13,7 @@ public class FishGenerator : MonoBehaviour
     private float maxRandomTime = 3f;
     private float fish_x;
     private float fish_y;
-
-    void Start()
-    {
-        FishBorn();
-    }
+    public int fishNum = 0;
 
     // Update is called once per frame
     void Update()
@@ -27,6 +23,8 @@ public class FishGenerator : MonoBehaviour
         {
             timer = 0f;
             FishBorn();
+            fishNum++;
+            
         }
     }
 
@@ -34,12 +32,17 @@ public class FishGenerator : MonoBehaviour
     {
         if (fish != null)
         {
-            fish_x = Random.Range(spawnAreaX-8, spawnAreaX + 5);
+            fish_x = Random.Range(spawnAreaX, spawnAreaX +30);
             fish_y = Random.Range(spawnAreaY-8, spawnAreaY);
             Vector3 fishPos = new Vector3(fish_x, fish_y, fish.transform.position.z);
             Instantiate(fish, fishPos, Quaternion.identity);
 
             RandomTime = Random.Range(minRandomTime, maxRandomTime);
         }
+    }
+
+    public int fish_count()
+    {   
+            return fishNum;
     }
 }

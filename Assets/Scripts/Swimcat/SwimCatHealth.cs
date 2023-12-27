@@ -9,7 +9,7 @@ public class SwimCatHealth : MonoBehaviour
     
     public float healthDecreaseRate = 2f;
     public float maxHealth=10f;
-    public float oxygen = 0.008f;
+    public float oxygen = 0.01f;
 
     public float waterSurfaceY = 6f;
     [SerializeField] private float amount;
