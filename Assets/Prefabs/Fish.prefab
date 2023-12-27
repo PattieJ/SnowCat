@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 546891176640407153}
   m_Layer: 0
   m_Name: SmallFish
-  m_TagString: Untagged
+  m_TagString: fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -265,6 +265,7 @@ MonoBehaviour:
   Leftmove: {x: 1, y: 0, z: 0}
   moveSpeed: -2
   cameraLimit: -20
+  scoreText: {fileID: 0}
 --- !u!1 &546891177119111819
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,7 +277,7 @@ GameObject:
   - component: {fileID: 546891177119111816}
   m_Layer: 0
   m_Name: Fish
-  m_TagString: Untagged
+  m_TagString: fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

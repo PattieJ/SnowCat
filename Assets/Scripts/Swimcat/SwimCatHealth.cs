@@ -9,10 +9,11 @@ public class SwimCatHealth : MonoBehaviour
     
     public float healthDecreaseRate = 2f;
     public float maxHealth=10f;
-    public float oxygen = 1;
+    public float oxygen = 0.008f;
 
     public float waterSurfaceY = 6f;
     [SerializeField] private float amount;
+    
     private float currentHealth;
     private Animator anim;
     void Start()
@@ -32,12 +33,18 @@ public class SwimCatHealth : MonoBehaviour
             recoverHealth(oxygen);
         }
     }
+    public void hitHealth(float amount)
+    {
+        currentHealth = Mathf.Clamp(currentHealth - amount, 0f, maxHealth);
+        UpdateHealthUI();
+    }
 
     void DecreaseHealth(float amount)
     {
         currentHealth = Mathf.Clamp(currentHealth - amount, 0f, maxHealth);
         UpdateHealthUI();
     }
+    
     void recoverHealth(float oxygen)
     {
         currentHealth = Mathf.Clamp(currentHealth + oxygen, 0f, maxHealth);
@@ -47,6 +54,5 @@ public class SwimCatHealth : MonoBehaviour
     {
         healthBar.setHealthBar(currentHealth / maxHealth); //将当前血量映射到max里
     }
-
 
 }
