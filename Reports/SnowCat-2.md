@@ -32,20 +32,101 @@
 1. + 创建 `UI` 对象，在其中添加空对象 `Score` 。
    + 在 `score` 中添加 `Text` 对象命名为 `ScoreTable` 用来显示积分数值，添加 `Image` 对象命名为 `Snowball` 用来装饰积分条。
 
-2. + 修改积分数值显示字体。
+2. + 修改积分数值显示字体， `Text` → `Character` → `Font` 修改字体为Import进的 `ThaleahFat_TTF`，`Font Size` 根据画面大小调整到合适数值。
 
    <img src=".\reportsAssets_2\scoreTableFont.png" style="zoom:50%;" />
 
-   
+   + 原载入的字体略宽，修改 `Scale` 中的值稍微调整以达美观。
+   + 字体颜色 `Color` 修改为白色。
 
-## 3.制作判定圆环
+3. 在 `Snowball` 中挂载对应图片。
+
+   <img src=".\reportsAssets_2\SnowballSourceImage.png" style="zoom:50%;" />
+
+4. 调整积分条在UI界面的位置 `Position` ，使其位于右上角。
 
 
 
+## 3.制作圆环（为得分判定做准备）
 
 
-画面分屏
 
-主屏按键
+1. 创建 `2D Object` → `Sprites` → `Square` ，命名为 `judgeCircle` 。
+2. 创建空白 `Material` 命名为 `snowCircle` ，挂载到 `judgeCircle` 上，调整颜色。
+3. 创建 `Shader` → `Standard Surface Shader` ，基于 [ 圆环实现实例 ](https://blog.csdn.net/Cake_C/article/details/122753644) 编辑代码内容实现圆环效果，挂载到 `snowCircle` 上。
 
-小屏猫猫捡雪花
+<img src=".\reportsAssets_2\snowCircle.png" style="zoom:50%;" />
+
+4. 将 `judgeCircle` 存放到 `Prefabs` 中。
+
+
+
+## 4.实现雪花的随机出现
+
+
+
+1. 创建一个空对象 `Player` 用于挂载代码。
+
+2. 基于课堂练习-12/13中的内容编写C#脚本 `RandomSnow` 实现每两秒在屏幕范围内出现一片雪花。
+
+   + 出现的雪花图片根据 `Random` 函数随机生成的数值在 `snow1~4` 之间确定。
+
+   + 箭头的方向由随机生成的整数* `90f`  作为旋转角度实现。
+
+   <img src=".\reportsAssets_2\RandomSnowCreate.png" style="zoom:50%;" />
+
+
+
+## 5.判断按键消除雪花
+
+
+
+1. 通过所生成雪花对象的旋转角度 `rotationZ` 来判断箭头所指方向。
+
+   <img src=".\reportsAssets_2\GetRotation.png" style="zoom:50%;" />
+
+2. 根据按键输入与 `rotationZ` 判断是否获取到雪花 `GetSnow` ，消除雪花对象，载入得到雪花的动画。
+
+<img src=".\reportsAssets_2\JudgeKeyInput.png" style="zoom:40%;" />
+
+3. 将该脚本挂载到 `Prefabs` 中的 `snow1~4` 上，并加入对应的雪花消失动画 `GetSnow` ，定义不同雪花的对应分数值 `Snow Score` 。
+
+<img src=".\reportsAssets_2\JudgeSnow.png" style="zoom:50%;" />
+
+
+
+## 6.雪花消失的动画
+
+
+
+1. 根据宏定义切割图片后，选中要用到的 `slice` 切片自动生成 `Animation` ，命名为 `GetSnow` 。
+2. 编写脚本 `DeleteGetSnow` ，实现动画播放一遍（即1s）后删除动画对象。
+
+
+
+## 7.实现圆环得分判定
+
+
+
+1. 圆环大小随时间缩放。
+
+   + 初始值设置为原本的 `Circle` 4倍大小。
+   + 定义 `scaleSpeed` 随时间变化 `localScale` 。
+
+   <img src=".\reportsAssets_2\CircleScale.png" style="zoom:50%;" />
+
+2. 根据 `Circle` 对象的 `localScale` 值来判断得分的等级 `gradeLevel` ，具体分为 `Prefect`、 `Great`、 `Common`、 `Miss`。
+
+   + 当圆环缩小到足够小时，判断为 `Miss` 。
+
+   <img src=".\reportsAssets_2\JudgeMiss.png" style="zoom:50%;" />
+
+   + 在 `SnowGet` 中根据圆环的缩放大小值来判断得分等级。
+
+#####                注：圆环未缩小到足够小时，转入 `MissSnow` 。
+
+<img src=".\reportsAssets_2\JudgeGradeLevel.png" style="zoom:50%;" />
+
+
+
+## 8.制作MissSnow脚本动画（雪花淡出至消失）

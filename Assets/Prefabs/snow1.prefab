@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2052530971437105291}
+  - component: {fileID: 4629011721153178719}
   m_Layer: 0
   m_Name: snow1
   m_TagString: Untagged
@@ -33,6 +34,21 @@ Transform:
   - {fileID: 252950417480805068}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4629011721153178719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325867152821463886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c8d926a8456f4e32aa5bab6bd815bd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snowScore: 100
+  GetScore: {fileID: 6118654664394581013, guid: 1c676c75e77a44d59bea833766f27825, type: 3}
+  JudgeCircle: {fileID: 4212055339298138306, guid: d643032189b524a1597375fa7cf52d00, type: 3}
 --- !u!1 &2008630176401912041
 GameObject:
   m_ObjectHideFlags: 0
