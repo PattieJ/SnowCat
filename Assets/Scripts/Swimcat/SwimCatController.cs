@@ -11,7 +11,7 @@ public class SwimCatController : MonoBehaviour
 
     private Animator animator;
     private Rigidbody2D rb;
-    [SerializeField] private float hitAmount = 1f;
+    [SerializeField] private float hitAmount = 2f;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +40,11 @@ public class SwimCatController : MonoBehaviour
         {
             Up();
         }
+
+        if (collision.gameObject.CompareTag("shark"))
+        {
+            hit();
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -48,6 +53,11 @@ public class SwimCatController : MonoBehaviour
         {
             //Debug.Log("1");
             animator.SetBool("IsUp",false);
+        }
+        if (collision.gameObject.CompareTag("shark"))
+        {
+            animator.ResetTrigger("hit");
+            swimCatHealth.hitHealth(hitAmount);
         }
     }
 

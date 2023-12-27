@@ -701,10 +701,10 @@ TextureImporter:
       name: UI ICONS_WHITE_pixel art_Sprite Sheet_28
       rect:
         serializedVersion: 2
-        x: 40
-        y: 716
-        width: 48
-        height: 16
+        x: 39
+        y: 676
+        width: 49
+        height: 56
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -745,8 +745,8 @@ TextureImporter:
         serializedVersion: 2
         x: 296
         y: 680
-        width: 20
-        height: 44
+        width: 50
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -756,27 +756,6 @@ TextureImporter:
       bones: []
       spriteID: c4813550351c1f64987a95ef875d624f
       internalID: -424374854
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI ICONS_WHITE_pixel art_Sprite Sheet_31
-      rect:
-        serializedVersion: 2
-        x: 324
-        y: 680
-        width: 20
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 815dc6e2617a05a4d8ac97829216cd7c
-      internalID: -1783478090
       vertices: []
       indices: 
       edges: []
@@ -891,9 +870,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1072
-        y: 692
+        y: 678
         width: 32
-        height: 36
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -912,9 +891,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1208
-        y: 692
+        y: 677
         width: 16
-        height: 36
+        height: 51
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -924,48 +903,6 @@ TextureImporter:
       bones: []
       spriteID: 27febd08422b01145ba19894cce0b580
       internalID: -881033717
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI ICONS_WHITE_pixel art_Sprite Sheet_39
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 696
-        width: 48
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27726418e67bc90469ecd375348ca0b2
-      internalID: 1905510553
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI ICONS_WHITE_pixel art_Sprite Sheet_40
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 676
-        width: 48
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b4e577de0be7c844b8ae464731d5556
-      internalID: 1591847430
       vertices: []
       indices: 
       edges: []
@@ -1018,7 +955,7 @@ TextureImporter:
         serializedVersion: 2
         x: 40
         y: 552
-        width: 40
+        width: 59
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1039,7 +976,7 @@ TextureImporter:
         serializedVersion: 2
         x: 168
         y: 552
-        width: 40
+        width: 59
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1055,33 +992,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI ICONS_WHITE_pixel art_Sprite Sheet_45
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 564
-        width: 8
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2433aabb4142b464ba5f73eb4627758a
-      internalID: 703924829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: UI ICONS_WHITE_pixel art_Sprite Sheet_46
       rect:
         serializedVersion: 2
         x: 296
         y: 552
-        width: 40
+        width: 59
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1092,48 +1008,6 @@ TextureImporter:
       bones: []
       spriteID: 9de6e131fe6162841a4a96de09b5b53f
       internalID: 1727497719
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI ICONS_WHITE_pixel art_Sprite Sheet_47
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 564
-        width: 8
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3fd8cf98c5dc554cb54b891906a7c03
-      internalID: -826261589
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI ICONS_WHITE_pixel art_Sprite Sheet_48
-      rect:
-        serializedVersion: 2
-        x: 340
-        y: 556
-        width: 12
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8fd6e00a3fa7804485bed5b836f7b5e
-      internalID: 1760566874
       vertices: []
       indices: 
       edges: []
@@ -2399,48 +2273,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI ICONS_WHITE_pixel art_Sprite Sheet_109
-      rect:
-        serializedVersion: 2
-        x: 1068
-        y: 556
-        width: 39
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ccdf678bb82216743a6fe12fb25a2239
-      internalID: 383904003
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI ICONS_WHITE_pixel art_Sprite Sheet_110
-      rect:
-        serializedVersion: 2
-        x: 1187
-        y: 548
-        width: 57
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7122020733f6904459f6f645bb7085e7
-      internalID: 108073074
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: UI ICONS_WHITE_pixel art_Sprite Sheet_111
       rect:
         serializedVersion: 2
@@ -2449,7 +2281,7 @@ TextureImporter:
         width: 43
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2470,7 +2302,7 @@ TextureImporter:
         width: 58
         height: 65
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2491,7 +2323,7 @@ TextureImporter:
         width: 56
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2512,7 +2344,7 @@ TextureImporter:
         width: 55
         height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

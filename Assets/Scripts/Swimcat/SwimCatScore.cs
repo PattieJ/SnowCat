@@ -19,8 +19,8 @@ public class SwimCatScore : MonoBehaviour
     }
     private void addScore()
     {
-        score++;
-        scoreText.text = "score: " + score;
+        score=score+2;
+        scoreText.text = "score:" + score;
         //Debug.Log("score:" + score);
     }
 }
