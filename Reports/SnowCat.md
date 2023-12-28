@@ -233,7 +233,9 @@ PlanB:
 
 //决定还是先做好小游戏再做load场景吧
 
-## 8. swimCat
+## 8. 在角色半径内设置光源，随着天数逐渐点亮场景画面
+
+## 9. swimCat
 
 ### 1. 移动背景并循环播放
 
@@ -522,14 +524,58 @@ bug: 猫猫不能跳出画面
 ### 13. 加一些小动物和装饰品丰富场景
 
 + 做一个大鲨鱼，碰到会hurt
++ 飞鸟
++ 小企鹅
++ 后面再尝试能不能加一些花花草草
 
 ### 14. 加入音乐
+
+将store里的资源导入unity的教程：[导入 Asset Store 资源包 - Unity 手册](https://docs.unity.cn/cn/2020.3/Manual/upm-ui-import.html)
+
++ 创建背景音
+
+  + 新建一个audio source，导入音乐
+  + 打开game里的音乐，即可听见
+
+  <img src=".\reportsAsserts\gameMusic.png" alt="image-20231228151932303" style="zoom:50%;" />
+
++ 猫咪在水中按空格时，有划水音效(使用water_walk_04)
+
+  + 在player里添加audio source组件
+
+  + 在player controller里修改脚本
+
+    + ```c#
+      AudioSource audioSource;
+      void Start()
+      {
+      	audioSource = GetComponent<AudioSource>();
+      }
+      ```
+
+    + ```c#
+      public AudioClip swimAudio;
+      ```
+
+    + ```c#
+      private void Swim()
+      {
+          audioSource.clip = swimAudio;
+          audioSource.Play();
+      }
+      ```
+
+  + 把声音拖入脚本
+
++ 跃出水面时，有水花音效(water_jump_light_02)\落回水面时，有水花音效 (water_jump_light_04) ,挂载到水花上
+
++ 
+
+  
 
 ### 15. 设置UI
 
 <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\settingUI.png" alt="image-20231227231513275" style="zoom:50%;" />
 
-### 
 
-关于场景设计的新的想法：在角色半径内设置光源，随着天数逐渐点亮场景画面
 
