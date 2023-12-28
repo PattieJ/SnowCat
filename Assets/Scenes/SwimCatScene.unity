@@ -611,7 +611,6 @@ MonoBehaviour:
   swimCatHealth: {fileID: 13112678}
   hitAmount: 1
   swimAudio: {fileID: 8300000, guid: caf48be4d869fe24f85866b95cdbe017, type: 3}
-  upAudio: {fileID: 8300000, guid: 0c65c34d499c17a42a643d5727eff438, type: 3}
 --- !u!114 &13112678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -643,6 +642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 172923068}
+  magicAudio: {fileID: 8300000, guid: 51ed12772b2ab574f92408b1c5f74497, type: 3}
 --- !u!82 &13112680
 AudioSource:
   m_ObjectHideFlags: 0
@@ -38318,7 +38318,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

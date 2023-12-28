@@ -387,6 +387,8 @@ DONE，splash挂载在water上，设置的y轴为-1
    + 碰撞后隐藏小鱼并激活smoke效果
    
    + 最后destroy掉父类
+   
+   + 写在swimCatScore里
 
 
 
@@ -569,7 +571,9 @@ bug: 猫猫不能跳出画面
 
 + 跃出水面时，有水花音效(water_jump_light_02)\落回水面时，有水花音效 (water_jump_light_04) ,挂载到水花上
 
-+ 
++ 吃到小鱼的特效声音(Magic Spell_Coins_2)
+
+  + 遇到的问题：音效过长，需要对音效进行截取
 
   
 
