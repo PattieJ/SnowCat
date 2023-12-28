@@ -15,12 +15,6 @@ public class GameTrigger : MonoBehaviour
     private string content = "EnterÌø×ª³¡¾°";
     private bool triggerKey;
     private bool dialogKey;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F) && triggerKey)

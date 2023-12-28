@@ -68,13 +68,17 @@
 
    + 修改引擎默认动画：右键点击`entry`，选择 `set stateMachine default state`之后，连接到 `idle` 状态
 
-   + 创建 `Walk` 的混合树，选择 `blend type` 为 `2D Freedom`
+   + 创建 `Walk` 的混合树，双击mode，选择 `blend type` 为 `2D Freedom`
 
-   + 在`parameters`部分，添加变量`float`的 `X` `Y` 和`bool IsWalking`
+   + 在`parameters`部分，添加变量`float`的 `velocityX` `velocityY` 和`bool IsWalking`
 
      <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\prama.png" alt="image-20231218200653185" style="zoom:50%;" />
 
-   + 点击 `ADD MotionField`，添加四个状态，分别为 下、上、左、右。再根据状态上下左右调整XY值。
+   + 点击 `ADD MotionField`
+
+     <img src=".\reportsAsserts\addMode.png" alt="image-20231229003639799" style="zoom:50%;" />
+
+   + 添加四个状态，分别为 下、上、左、右。再根据状态上下左右调整XY值。
 
      <img src=".\reportsAsserts\walk.png" alt="image-20231215010904127" style="zoom:50%;" />
 
@@ -142,6 +146,10 @@ PlanB:
 4. 在`Ground` 上 画 `Plants`，新建layer Plants，并调整顺序即可
 
    <img src=".\reportsAsserts\tilemapPlants.png" alt="image-20231215195221983" style="zoom:50%;" />
+   
+5. 黑线问题
+
+   <img src=".\reportsAsserts\unit.png" style="zoom: 80%;" />
 
 ## 4. 创建开始界面
 
@@ -235,7 +243,13 @@ PlanB:
 
 ## 8. 在角色半径内设置光源，随着天数逐渐点亮场景画面
 
-## 9. swimCat
+## 9. 添加碰撞检测
+
++ 添加tilemap collider，选择 use by composite
++ 添加composite collider
++ 把rigidbody 的body type改为2D
+
+## 10. swimCat
 
 ### 1. 移动背景并循环播放
 
@@ -497,7 +511,7 @@ bug: 猫猫不能跳出画面
 
 ### 10. 变成雪花进入UI系统
 
-
+没空做了
 
 ### 11. 给水底加背景
 
@@ -597,7 +611,6 @@ bug: 猫猫不能跳出画面
 
     <img src=".\reportsAsserts\buttonClick.png" alt="image-20231228191855675" style="zoom:50%;" />
 
-+ 
 
 ### 15. 设置UI
 
