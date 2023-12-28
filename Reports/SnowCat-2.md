@@ -166,15 +166,41 @@
 
 
 
+1. 制作 `UI` 中 `Image` 对象 `life1` 、 `life2` 、 `life3` ，`Source Image`设置为裁剪好的 `heart` 图片。
+
+<img src=".\reportsAssets_2\heartSet.png" style="zoom:50%;" />
+
++ 这里为了避免屏幕缩放构成的 `UI` 位置错乱，将分数对象与生命值对象都调整为相对右上角。
+
+<img src=".\reportsAssets_2\transformScore.png" style="zoom:50%;" />
+
+2. 编辑脚本代码，实现每次 `Miss` 时生命-1，生命为零时 `GameOver`。
+
+<img src=".\reportsAssets_2\lifeHurt.png" style="zoom:50%;" />
+
+
+
 ## 11.通过Tilemap制作背景
 
 
 
-## 12.制作进入该场景后游戏开始前的画面
+1. 创建 `Tilemap` 对象，选择 `Rectangular`。
+
+<img src=".\reportsAssets_2\tilemap.png" style="zoom:50%;" />
+
+2. 具体步骤略。
+
+3. 为了让雪花出现在背景上层，将该 `Tilemap` 对象的 `Z` 值修改为 `2` 。在制作 `Tilemap` 中也注意雪地与树丛的 `layer` 值以达到层次效果。
+
+   <img src=".\reportsAssets_2\tilemapLayer.png" style="zoom:50%;" />
 
 
 
-## 13.制作该小游戏结束的画面
+## 12.开始前的画面
+
+
+
+## 13.结束画面
 
 
 
@@ -190,6 +216,10 @@
 
 
 
+## 17.粒子系统雪花飘落
+
+
+
 
 
 + # 游戏封面背景
@@ -200,3 +230,11 @@
 
 + # 第一日游戏场景的补全完善
 
+
+
+1. + 对图片进行处理。 `Sprite Mode` 选择 `Multiple` ， `Pixels Per Unit` 调整为 `16` 或 `64` 或 `128` ，`Filter Mode` 选中 `Point(no filter)` ， `Compression` 调整为 `None` 。
+
+<img src=".\reportsAssets_2\CutPhoto.png" style="zoom:50%;" />
+
+2. + 裁剪后导入 `Tilemap` 中，保存并使用。
+3. +  `Tilemap` 分层绘制等方法参照另一位的报告。
