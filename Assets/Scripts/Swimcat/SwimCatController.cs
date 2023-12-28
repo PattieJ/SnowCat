@@ -13,14 +13,16 @@ public class SwimCatController : MonoBehaviour
     private Rigidbody2D rb;
     [SerializeField] private float hitAmount = 2f;
 
-    // Start is called before the first frame update
+    AudioSource audioSource;
+    public AudioClip swimAudio;
+
     void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && transform.position.y < waterSurfaceY)
@@ -82,6 +84,8 @@ public class SwimCatController : MonoBehaviour
         animator.SetBool("IsSwim", true);
         rb.velocity = swim;
         playBubble();
+        audioSource.clip = swimAudio;
+        audioSource.Play();
     }
 
     private void Up()
