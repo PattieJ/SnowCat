@@ -14,7 +14,7 @@ public class SwimCatController : MonoBehaviour
     [SerializeField] private float hitAmount = 2f;
 
     AudioSource audioSource;
-    public AudioClip swimAudio;
+    public AudioClip swimAudio, hitAudio;
 
     void Start()
     {
@@ -98,6 +98,7 @@ public class SwimCatController : MonoBehaviour
     private void hit()
     {
         animator.SetTrigger("hit");
+        AudioSource.PlayClipAtPoint(hitAudio, transform.position);
     }
 
     private void playBubble()
