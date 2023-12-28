@@ -573,9 +573,31 @@ bug: 猫猫不能跳出画面
 
 + 吃到小鱼的特效声音(Magic Spell_Coins_2)
 
-  + 遇到的问题：音效过长，需要对音效进行截取
+  + 音效过长，需要对音效进行截取（直接谷歌找小工具进行裁剪即可）
 
-  
+  + 为了不让audio source发生抢占的问题，使用代码如下，这样就是使用audioclip来播放
+
+    ```C#
+    public AudioClip magicAudio;
+    ```
+
+    ```c#
+    private void OnTriggerEnter2D(Collider2D collision){
+    	AudioSource.PlayClipAtPoint(magicAudio, transform.position);
+    }
+    ```
+
++ 被击中时有声音，如上
+
++ 按钮点击时添加音效
+
+  + 给button添加audio source组件，取消play on wake选项，拖入音效
+
+  + onlock处修改如下
+
+    <img src=".\reportsAsserts\buttonClick.png" alt="image-20231228191855675" style="zoom:50%;" />
+
++ 
 
 ### 15. 设置UI
 
