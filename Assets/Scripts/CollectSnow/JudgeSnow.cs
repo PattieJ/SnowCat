@@ -84,6 +84,7 @@ public class JudgeSnow : MonoBehaviour
 
     private void MissSnow()
     {
+        collectSnow.hurt();
         collectSnow.GetScoreLevel("MISS");
         Destroy(Circle);
         Destroy(gameObject);
