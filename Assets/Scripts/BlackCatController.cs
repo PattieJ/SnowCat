@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BlackCatController : MonoBehaviour
 {
@@ -76,4 +77,6 @@ public class BlackCatController : MonoBehaviour
         animator.SetFloat("velocityX", moveX);
         animator.SetFloat("velocityY", moveY);
     }
+
+
 }
