@@ -134,7 +134,7 @@ PlanB:
 
   Z轴需要特别处理，不能直接全用position进行差值计算。将角色的Z轴
 
-## 3. 第一个场景绘画
+## 3. 场景绘画
 
 1. 创建画板
 
@@ -159,6 +159,30 @@ PlanB:
 5. 黑线问题
 
    <img src=".\reportsAsserts\unit.png" style="zoom: 80%;" />
+
++ 下雨效果
+
++ 下雪效果
+
+  + 创建PS，初始化（Z轴要调整好），调整图层
+
+  + 修改start speed为0，不向上
+
+  + Velocity修改linerX/ Y 为-5，向左下飘
+
+  + shape改为circle，且修改radius，改大，有全屏效果
+
+  + start size改为随机的0.1-0.4，有大小变化
+
+  + Emission里的rate over time改大一点，数量就变多
+
+  + 勾上noise就有飘荡的效果
+
+  + Color over lifetime里修改color，如图（间隔一个拉一个，头尾调成0）
+
+    <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\coloralpha.png" alt="image-20231230001043745" style="zoom:50%;" />
+
+  + 把simulation space改成world，在世界坐标系下 下雪
 
 ## 4. 创建开始界面
 
