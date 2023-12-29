@@ -15,6 +15,8 @@ public class BlackCatController : MonoBehaviour
 
     private Animator animator;
     private Rigidbody2D rb;
+    AudioSource audioSource;
+    public AudioClip walkAudio;
 
     /* initialization
      * 1. animator
@@ -24,6 +26,7 @@ public class BlackCatController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -42,6 +45,14 @@ public class BlackCatController : MonoBehaviour
 
     private void getInput()
     {
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow) ||
+        Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) ||
+        Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) ||
+        Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+        {
+            audioSource.clip = walkAudio;
+            audioSource.Play();
+        }
         moveX = Input.GetAxisRaw("Horizontal");//вСср
         moveY = Input.GetAxisRaw("Vertical");//иооб
         moveDirect = new Vector2(moveX, moveY);

@@ -62,9 +62,14 @@
      <img src=".\reportsAsserts\flip.png" alt="image-20231215001316524" style="zoom:50%;" />
 
    + 播放
+
    + 停止录制（结束。可每个animator检查一下是否正确）
 
-5. ##### 连接动画：`animator `状态机
+
++ 制作移动声音
+  + <img src=".\reportsAsserts\walkaudio.png" alt="image-20231229205447474" style="zoom:50%;" />
+
+1. ##### 连接动画：`animator `状态机
 
    + 修改引擎默认动画：右键点击`entry`，选择 `set stateMachine default state`之后，连接到 `idle` 状态
 
@@ -100,7 +105,7 @@
 
      <img src=".\reportsAsserts\condition.png" alt="image-20231215011916511" style="zoom:50%;" />
 
-6. ##### 连接scripts，实现按键走动
+2. ##### 连接scripts，实现按键走动
 
    ```
    TODO: 代码逻辑思路待补充
@@ -242,6 +247,8 @@ PlanB:
 //决定还是先做好小游戏再做load场景吧
 
 ## 8. 在角色半径内设置光源，随着天数逐渐点亮场景画面
+
++ 下载插件，universal URP
 
 ## 9. 添加碰撞检测
 
@@ -532,8 +539,6 @@ bug: 猫猫不能跳出画面
 3. 开始时暂停状态，但仍希望播放anim动画，修改如下
 
    <img src=".\reportsAsserts\timescaleAnim.png" alt="image-20231227024204756" style="zoom:50%;" />
-
-4. 后面改一改space
 
 5. 改动对UImenu，按空格后才出现
 
