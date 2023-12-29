@@ -27,6 +27,7 @@ public class JudgeSnow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (collectSnow.isGameOver) return;
         Circle.transform.localScale = new Vector3(
             Circle.transform.localScale.x - scaleSpeed*Time.deltaTime,
             Circle.transform.localScale.y - scaleSpeed*Time.deltaTime,
@@ -80,6 +81,7 @@ public class JudgeSnow : MonoBehaviour
             gradeLevel = 0.5f;
         }
         collectSnow.AddScore((int)(snowScore *gradeLevel));
+        collectSnow.CountScoreAll(snowScore);
     }
 
     private void MissSnow()
@@ -89,6 +91,8 @@ public class JudgeSnow : MonoBehaviour
         Destroy(Circle);
         Destroy(gameObject);
         Instantiate(SnowMiss, transform.position, transform.rotation);
+        collectSnow.CountScoreAll(snowScore);
+
 
     }
 }
