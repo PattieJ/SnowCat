@@ -80,6 +80,7 @@ public class JudgeSnow : MonoBehaviour
             collectSnow.GetScoreLevel("COMMON");
             gradeLevel = 0.5f;
         }
+        SoundManager.PlayGetSnowClip();
         collectSnow.AddScore((int)(snowScore *gradeLevel));
         collectSnow.CountScoreAll(snowScore);
     }
@@ -91,6 +92,7 @@ public class JudgeSnow : MonoBehaviour
         Destroy(Circle);
         Destroy(gameObject);
         Instantiate(SnowMiss, transform.position, transform.rotation);
+        SoundManager.PlayMissSnowClip();
         collectSnow.CountScoreAll(snowScore);
 
 
