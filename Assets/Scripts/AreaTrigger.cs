@@ -5,26 +5,16 @@ using UnityEngine.UI;
 
 public class AreaTrigger : MonoBehaviour
 {
-    public Image imageToShow1;
-    public Image imageToShow2;
-    void Start()
-    {
-        imageToShow2.gameObject.SetActive(false);
-    }
+    public Image imageToActivate;
+    public Image imageNotActivate;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("RightArea"))
+        if (other.gameObject.CompareTag("Player")) // 假设进入触发器的是角色
         {
             Debug.Log("1");
-            imageToShow1.gameObject.SetActive(true); // 显示第一个Image
-            imageToShow2.gameObject.SetActive(false); // 隐藏第二个Image
-        }
-        if (other.CompareTag("DownArea"))
-        {
-            Debug.Log("2");
-            imageToShow1.gameObject.SetActive(false); // 隐藏第一个Image
-            imageToShow2.gameObject.SetActive(true); // 显示第二个Image
+            imageToActivate.gameObject.SetActive(true); // 激活Image
+            imageToActivate.gameObject.SetActive(false);
         }
     }
 }
