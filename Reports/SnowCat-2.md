@@ -287,7 +287,11 @@
 
 
 
-## 15. 增添猫爪动画（可选）
+## 15.粒子系统雪花飘落
+
+
+
+[参考视频](https://www.bilibili.com/video/BV1oN41147xv/?vd_source=199c476812cba7df1a1c0a74c8321135)
 
 
 
@@ -295,11 +299,15 @@
 
 
 
-## 17.粒子系统雪花飘落
++ 创建空对象，添加组件 `Audio Source` ，设置音频作为 `bgm` ，勾选 `Play On Wake` 以及 `Loop` 。
+
+<img src=".\reportsAssets_2\Audio.png" style="zoom:50%;" />
+
++ 挂载脚本添加音效，当 `JudgeSnow` 脚本中调用 `MissSnow` 或 `GetSnow` 时，播放对应的音效。
+
+<img src=".\reportsAssets_2\audioClip.png" style="zoom:50%;" />
 
 
-
-[参考视频](https://www.bilibili.com/video/BV1oN41147xv/?vd_source=199c476812cba7df1a1c0a74c8321135)
 
 
 
