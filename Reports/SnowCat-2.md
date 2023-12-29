@@ -200,11 +200,90 @@
 
 
 
+1. 制作倒计时文本。
+
+   + 在 `UI` 中创建 `TextMeshPro` 对象命名为 `CountDownText` ，调整字体、大小、局中并加粗。位置相对于屏幕正中。
+
+   + 添加 `Canvas Group` 组件，使能够直接修改该对象的 `alpha` 值。
+
+     <img src=".\reportsAssets_2\CanvasGroup.png" style="zoom:50%;" />
+
+2. 编辑脚本挂载到倒计时对象上。
+
+   + 随时间推移改变脚本内容，并在倒计时三秒后隐藏倒计时文本对象。
+
+   + 修改 `alpha` 值实现倒计时闪烁。
+
+<img src=".\reportsAssets_2\countDown_1.png" style="zoom:50%;" />
+
+3. 一并修改随机产生雪花的 `RandomSnow` 脚本，以达到倒计时结束前不会有雪花产生的效果。
+
+<img src=".\reportsAssets_2\countDown_2.png" style="zoom:50%;" />
+
+<img src=".\reportsAssets_2\countDown_3.png" style="zoom:50%;" />
+
+
+
 ## 13.结束画面
 
 
 
+1. 完善游戏结束的判定。
+
+   + 生命值归零时游戏结束。
+
+   + 飘落雪花的总价值积分超过50000时游戏结束。
+
+     <img src=".\reportsAssets_2\countScoreAll.png" style="zoom:50%;" />
+
+     <img src=".\reportsAssets_2\judgeIsGameOver.png" style="zoom:50%;" />
+
+2. 游戏结束的画面。
+
+   + 文本及积分显示。
+
+   + 星级判断。
+
+   <img src=".\reportsAssets_2\showScore.png" style="zoom:50%;" />
+
+   + 退出到主页面或进入下一天。
+
+   <img src=".\reportsAssets_2\ButtonPhoto.png" style="zoom:50%;" />
+
+   ##### 具体逻辑实现（按钮脚本）见完善UI。
+
+3. 游戏结束时，脚本 `RandomSnow` 与 `JudgeSnow` 不再运行。
+
+<img src=".\reportsAssets_2\OverJudge.png" style="zoom:50%;" />
+
+<img src=".\reportsAssets_2\OverCreate.png" style="zoom:50%;" />
+
 ## 14.完善UI
+
+
+
+1. 实现 `Back` 按键功能。
+
+   + 按下 `esc` 键或点击 `back` 按钮时，游戏内时间停止，出现 `IfQuit` 面板提示是否退出游戏。
+
+   <img src=".\reportsAssets_2\timePause.png" style="zoom:50%;" />
+
+   <img src=".\reportsAssets_2\ifQuit.png" style="zoom:50%;" />
+
+   + 再次按下 `esc` 或点击 `back` 或 `X` 按钮，游戏时间恢复， `IfQuit` 面板消失。
+
+   <img src=".\reportsAssets_2\resumePause.png" style="zoom:50%;" />
+
+   + 在 `IfQuit` 面板中点击 `√` 按钮，跳转场景，回到游戏主界面。
+
+   <img src=".\reportsAssets_2\QuitYes.png" style="zoom:50%;" />
+
+2. 实现 `Help` 按键功能。
+
+   + 按下 `H` 键或 `Help` 按钮时显示说明书并暂停游戏时间，再按下回到游戏。
+   + 在游戏倒计时开始前显示说明书。（初始化说明书相关脚本中的部分 `bool` 值定义）
+
+3. 实现 `Next` 按键功能。（原理同 `Back` )
 
 
 
@@ -219,6 +298,8 @@
 ## 17.粒子系统雪花飘落
 
 
+
+[参考视频](https://www.bilibili.com/video/BV1oN41147xv/?vd_source=199c476812cba7df1a1c0a74c8321135)
 
 
 
