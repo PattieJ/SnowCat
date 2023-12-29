@@ -69,50 +69,54 @@
 + 制作移动声音
   + <img src=".\reportsAsserts\walkaudio.png" alt="image-20231229205447474" style="zoom:50%;" />
 
-1. ##### 连接动画：`animator `状态机
+**5. 连接动画：`animator `状态机**
 
-   + 修改引擎默认动画：右键点击`entry`，选择 `set stateMachine default state`之后，连接到 `idle` 状态
++ 修改引擎默认动画：右键点击`entry`，选择 `set stateMachine default state`之后，连接到 `idle` 状态
 
-   + 创建 `Walk` 的混合树，双击mode，选择 `blend type` 为 `2D Freedom`
++ 创建 `Walk` 的混合树，双击mode，选择 `blend type` 为 `2D Freedom`
 
-   + 在`parameters`部分，添加变量`float`的 `velocityX` `velocityY` 和`bool IsWalking`
++ 在`parameters`部分，添加变量`float`的 `velocityX` `velocityY` 和`bool IsWalking`
 
-     <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\prama.png" alt="image-20231218200653185" style="zoom:50%;" />
+  <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\prama.png" alt="image-20231218200653185" style="zoom:50%;" />
 
-   + 点击 `ADD MotionField`
++ 点击 `ADD MotionField`
 
-     <img src=".\reportsAsserts\addMode.png" alt="image-20231229003639799" style="zoom:50%;" />
+  <img src=".\reportsAsserts\addMode.png" alt="image-20231229003639799" style="zoom:50%;" />
 
-   + 添加四个状态，分别为 下、上、左、右。再根据状态上下左右调整XY值。
++ 添加四个状态，分别为 下、上、左、右。再根据状态上下左右调整XY值。
 
-     <img src=".\reportsAsserts\walk.png" alt="image-20231215010904127" style="zoom:50%;" />
+  <img src=".\reportsAsserts\walk.png" alt="image-20231215010904127" style="zoom:50%;" />
 
-     检查正确方式：移动红点，看下方动画是否有相应变化
+  检查正确方式：移动红点，看下方动画是否有相应变化
 
-     <img src=".\reportsAsserts\testWalk.png" alt="image-20231215011238097" style="zoom:50%;" />
+  <img src=".\reportsAsserts\testWalk.png" alt="image-20231215011238097" style="zoom:50%;" />
 
-     
+  
 
-   + 右键`state`，点击`Make transition`，即可与另一个状态创建连线
++ 右键`state`，点击`Make transition`，即可与另一个状态创建连线
 
-     <img src=".\reportsAsserts\state_line.png" alt="image-20231215011625201" style="zoom:50%;" />
+  <img src=".\reportsAsserts\state_line.png" alt="image-20231215011625201" style="zoom:50%;" />
 
-   + 点击线，将`has Exit Time`等一系列取消，至如下图
++ 点击线，将`has Exit Time`等一系列取消，至如下图
 
-     <img src=".\reportsAsserts\ExitTime.png" alt="image-20231215011744279" style="zoom:50%;" />
+  <img src=".\reportsAsserts\ExitTime.png" alt="image-20231215011744279" style="zoom:50%;" />
 
-   + `Condition`一栏中，添加`IsWalking`，根据逻辑，选择`true or false`
++ `Condition`一栏中，添加`IsWalking`，根据逻辑，选择`true or false`
 
-     <img src=".\reportsAsserts\condition.png" alt="image-20231215011916511" style="zoom:50%;" />
+  <img src=".\reportsAsserts\condition.png" alt="image-20231215011916511" style="zoom:50%;" />
 
-2. ##### 连接scripts，实现按键走动
+**6 连接scripts，实现按键走动**
 
-   ```
-   TODO: 代码逻辑思路待补充
-   ```
+```
+TODO: 代码逻辑思路待补充
+```
 
-   + `GetAxis`可能存在滑步问题，改用`GetAxisRaw`
-   + `fixedUpdate` vs `update`
++ `GetAxis`可能存在滑步问题，改用`GetAxisRaw`
++ `fixedUpdate` vs `update`
+
+7 **设置走动音效**
+
+
 
 ## 2. 设置相机跟随角色
 
@@ -246,9 +250,21 @@ PlanB:
 
 //决定还是先做好小游戏再做load场景吧
 
-## 8. 在角色半径内设置光源，随着天数逐渐点亮场景画面
+## 8. 角色发光效果
 
-+ 下载插件，universal URP
++ 以下为第一次使用的步骤
+
+  + 下载插件，universal URP（第一次用时）
+
+  + create如下
+
+  + <img src=".\reportsAsserts\2Drenderer.png" alt="image-20231229221342744" style="zoom:50%;" />
+
+  + 把所有需要变暗的物体都调成如下
+
+    <img src=".\reportsAsserts\Lit.png" alt="image-20231229221556658" style="zoom:50%;" />
+
+  + 在project里右键添加2DLight
 
 ## 9. 添加碰撞检测
 
