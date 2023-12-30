@@ -7,6 +7,6 @@ public class ButtonNext : MonoBehaviour
 {
     public void Click()
     {
-        SceneManager.LoadScene("ThirdDayScene");
+        SceneManager.LoadScene(3);
     }
 }
