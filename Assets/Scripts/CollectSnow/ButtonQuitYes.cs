@@ -7,6 +7,6 @@ public class ButtonQuitYes : MonoBehaviour
 {
     public void Click()
     {
-        SceneManager.LoadScene("StartScene");
+        SceneManager.LoadScene(0);
     }
 }
