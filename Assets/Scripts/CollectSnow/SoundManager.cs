@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public static AudioSource audioSrc;
-    public static AudioClip getsnow;
-    public static AudioClip misssnow;
+    public AudioSource audioSrc;
+    public AudioClip getsnow;
+    public AudioClip misssnow;
     // Start is called before the first frame update
     void Start()
     {
         audioSrc = GetComponent<AudioSource>();
-        getsnow = Resources.Load<AudioClip>("Snow/GetSnow");
-        misssnow = Resources.Load<AudioClip>("Snow/MissSnow");
 
     }
 
@@ -21,12 +19,14 @@ public class SoundManager : MonoBehaviour
     {
         
     }
-    public static void PlayGetSnowClip()
+    public void PlayGetSnowClip()
     {
-        audioSrc.PlayOneShot(getsnow);
+       // Debug.Log("1");
+        AudioSource.PlayClipAtPoint(getsnow, transform.position);
     }
-    public static void PlayMissSnowClip()
+    public void PlayMissSnowClip()
     {
-        audioSrc.PlayOneShot(misssnow);
+       // Debug.Log("2");
+        AudioSource.PlayClipAtPoint(misssnow, transform.position);
     }
 }

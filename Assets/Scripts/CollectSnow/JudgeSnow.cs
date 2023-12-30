@@ -13,12 +13,16 @@ public class JudgeSnow : MonoBehaviour
     private float rotationZ;
     private float gradeLevel;
     private CollectGame collectSnow;
+
+    private SoundManager sound;
     private GameObject Circle;
     // Start is called before the first frame update
     void Start()
     {
         rotationZ = transform.eulerAngles.z;
         collectSnow = GameObject.FindWithTag("GameController").GetComponent<CollectGame>();
+        sound = GameObject.FindWithTag("GameController").GetComponent<SoundManager>();
+
 
         Circle = Instantiate(JudgeCircle, transform.position- new Vector3(0f,0f,2f), transform.rotation);
         Circle.transform.localScale *= 4f;
@@ -80,7 +84,7 @@ public class JudgeSnow : MonoBehaviour
             collectSnow.GetScoreLevel("COMMON");
             gradeLevel = 0.5f;
         }
-        SoundManager.PlayGetSnowClip();
+        sound.PlayGetSnowClip();
         collectSnow.AddScore((int)(snowScore *gradeLevel));
         collectSnow.CountScoreAll(snowScore);
     }
@@ -92,7 +96,7 @@ public class JudgeSnow : MonoBehaviour
         Destroy(Circle);
         Destroy(gameObject);
         Instantiate(SnowMiss, transform.position, transform.rotation);
-        SoundManager.PlayMissSnowClip();
+        sound.PlayMissSnowClip();
         collectSnow.CountScoreAll(snowScore);
 
 
