@@ -57,7 +57,7 @@ public class CollectGame : MonoBehaviour
     {
         UpdateScoreTable();
         UpdateScoreLevel();
-        if (score_all > 50000) isGameOver = true;
+        if (score_all > 10000) isGameOver = true;
         if (isGameOver)
         {
             GameOver();
