@@ -17028,8 +17028,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSrc: {fileID: 2112150206}
-  getsnow: {fileID: 8300000, guid: d1d061cc2756fd74fb29a8df2a5e1e09, type: 3}
-  misssnow: {fileID: 8300000, guid: c4d584f296eb30f40af613dac0f89af6, type: 3}
+  getsnow: {fileID: 8300000, guid: ad28fda5dd2494faa9310c4bfa6bf587, type: 3}
+  misssnow: {fileID: 8300000, guid: bcbe1e9df241f4518a7bef79b9dbaaf6, type: 3}
 --- !u!1 &2122881240
 GameObject:
   m_ObjectHideFlags: 0
