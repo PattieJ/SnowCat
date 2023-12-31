@@ -25,7 +25,7 @@ Bonfire: [Report2](./Reports/SnowCat-2.md)
 
 2. First day scene
 
-   ![FristDayScene1](.\Reports\readmeAsserts\FristDayScene1.png)
+   <img src=".\Reports\readmeAsserts\FristDayScene1.png" alt="FristDayScene1"  />
 
    
 
@@ -37,7 +37,7 @@ Bonfire: [Report2](./Reports/SnowCat-2.md)
 
    
 
-   ![FristDayScene2](.\Reports\readmeAsserts\FristDayScene2.png)
+   <img src=".\Reports\readmeAsserts\FristDayScene2.png" alt="FristDayScene2" style="zoom:80%;" />
 
    F 可进入下一场景，开始小游戏
 
@@ -45,60 +45,64 @@ Bonfire: [Report2](./Reports/SnowCat-2.md)
 
 3. Game 1
 
-   ![swimCat](.\Reports\readmeAsserts\swimCat.png)
+   <img src=".\Reports\readmeAsserts\swimCat.png" alt="swimCat" style="zoom:80%;" />
 
    
 
    
 
-   ![swimCat](.\Reports\readmeAsserts\swimCat1.png)
+   <img src=".\Reports\readmeAsserts\swimCat1.png" alt="swimCat" style="zoom:80%;" />
 
    
 
    
 
-   ![swimCat2](.\Reports\readmeAsserts\swimCat2.png)
+   <img src=".\Reports\readmeAsserts\swimCat2.png" alt="swimCat2" style="zoom:80%;" />
 
 4. second day scene
 
    
 
-   ![2Day](.\Reports\readmeAsserts\2Day.png)
+   <img src=".\Reports\readmeAsserts\2Day.png" alt="2Day" style="zoom:80%;" />
 
    
 
    
 
-   ![2Day1](.\Reports\readmeAsserts\2Day1.png)
+   <img src=".\Reports\readmeAsserts\2Day1.png" alt="2Day1" style="zoom:80%;" />
 
    
 
    
 
-   ![2Day2](.\Reports\readmeAsserts\2Day2.png)
+   <img src=".\Reports\readmeAsserts\2Day2.png" alt="2Day2" style="zoom:80%;" />
 
 5. ESC跳出菜单
 
-   <img src=".\Reports\readmeAsserts\Menu.png" alt="image-20231216205457201" />
+   <img src=".\Reports\readmeAsserts\Menu.png" alt="image-20231216205457201" style="zoom:80%;" />
 
 6. Game 2
 
-   ![2game1](.\Reports\readmeAsserts\2game1.png)
+   <img src=".\Reports\readmeAsserts\2game1.png" alt="2game1" style="zoom:80%;" />
 
    
 
    
 
-   ![2game2](.\Reports\readmeAsserts\2game2.png)
+   <img src=".\Reports\readmeAsserts\2game2.png" alt="2game2" style="zoom:80%;" />
 
    
 
-   ![2game3](.\Reports\readmeAsserts\2game3.png)
+   <img src=".\Reports\readmeAsserts\2game3.png" alt="2game3" style="zoom:80%;" />
 
 7. end day
 
    
 
-   ![3day1](.\Reports\readmeAsserts\3day1.png)
+   <img src=".\Reports\readmeAsserts\3day1.png" alt="3day1" style="zoom:80%;" />
 
-   ![3day2](.\Reports\readmeAsserts\3day2.png)
+   
+   
+   
+   
+   <img src=".\Reports\readmeAsserts\3day2.png" alt="3day2" style="zoom:80%;" />
