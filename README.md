@@ -1,7 +1,13 @@
 # SnowCat
 ## 简介
 
-制作过程记录：[Report](./Reports/SnowCat.md)
+请注意，由于部分资源属于付费资源，因此公开版本中将不拥有该部分资源素材
+
+制作过程记录
+
+pattie：[Report](./Reports/SnowCat.md)
+
+Bonfire: [Report2](./Reports/SnowCat-2.md)
 
 ## 版本信息
 
@@ -9,30 +15,90 @@
 
 ## 游戏简介
 
-## 相关实现
 
-1. WASD 或 上下左右 移动角色并切换状态
 
-2. 摄像头跟随角色移动，并有平滑效果
+## 游戏内容
 
-3. 游戏开始界面设计(初版)
+3. 游戏开始界面
 
    <img src=".\Reports\readmeAsserts\StartGameScene.png" alt="image-20231215224924146" />
 
-4. 基本场景搭建: First day scene（粗糙版）
+2. First day scene
+
+   ![FristDayScene1](.\Reports\readmeAsserts\FristDayScene1.png)
+
+   
+
+   
 
    <img src=".\Reports\readmeAsserts\FristDayScene.png" alt="image-20231215213324479"  />
 
    
 
+   
+
+   ![FristDayScene2](.\Reports\readmeAsserts\FristDayScene2.png)
+
+   F 可进入下一场景，开始小游戏
+
+   
+
+3. Game 1
+
+   ![swimCat](.\Reports\readmeAsserts\swimCat.png)
+
+   
+
+   
+
+   ![swimCat](.\Reports\readmeAsserts\swimCat1.png)
+
+   
+
+   
+
+   ![swimCat2](.\Reports\readmeAsserts\swimCat2.png)
+
+4. second day scene
+
+   
+
+   ![2Day](.\Reports\readmeAsserts\2Day.png)
+
+   
+
+   
+
+   ![2Day1](.\Reports\readmeAsserts\2Day1.png)
+
+   
+
+   
+
+   ![2Day2](.\Reports\readmeAsserts\2Day2.png)
+
 5. ESC跳出菜单
 
    <img src=".\Reports\readmeAsserts\Menu.png" alt="image-20231216205457201" />
 
-6. 触碰物品时按下F弹出对话框，进而可以跳转入小游戏场景
+6. Game 2
 
-   <img src=".\Reports\readmeAsserts\LoadGameScene.png" alt="image-20231216233957491" />
-
-7. 
+   ![2game1](.\Reports\readmeAsserts\2game1.png)
 
    
+
+   
+
+   ![2game2](.\Reports\readmeAsserts\2game2.png)
+
+   
+
+   ![2game3](.\Reports\readmeAsserts\2game3.png)
+
+7. end day
+
+   
+
+   ![3day1](.\Reports\readmeAsserts\3day1.png)
+
+   ![3day2](.\Reports\readmeAsserts\3day2.png)

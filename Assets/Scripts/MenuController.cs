@@ -11,6 +11,7 @@ public class MenuController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             MenuList.SetActive(MenuFlag);
+            MenuFlag = !MenuFlag;
         }
         MenuActive();
 
@@ -25,7 +26,7 @@ public class MenuController : MonoBehaviour
         {
             Time.timeScale = (1);//recover
         }
-        MenuFlag = !MenuFlag;
+        
     }
 }
  

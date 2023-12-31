@@ -77,7 +77,7 @@
 
 + 在`parameters`部分，添加变量`float`的 `velocityX` `velocityY` 和`bool IsWalking`
 
-  <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\prama.png" alt="image-20231218200653185" style="zoom:50%;" />
+  <img src=".\reportsAsserts\prama.png" alt="image-20231218200653185" style="zoom:50%;" />
 
 + 点击 `ADD MotionField`
 
@@ -180,7 +180,7 @@ PlanB:
 
   + Color over lifetime里修改color，如图（间隔一个拉一个，头尾调成0）
 
-    <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\coloralpha.png" alt="image-20231230001043745" style="zoom:50%;" />
+    <img src=".\reportsAsserts\coloralpha.png" alt="image-20231230001043745" style="zoom:50%;" />
 
   + 把simulation space改成world，在世界坐标系下 下雪
 
@@ -411,7 +411,7 @@ DONE，splash挂载在water上，设置的y轴为-1
 
 3. 将fill的img type进行修改，如下所示，滑动amount可以看见变化（法1）
 
-   <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\fill.png" alt="image-20231227142517216" style="zoom:50%;" />
+   <img src=".\reportsAsserts\fill.png" alt="image-20231227142517216" style="zoom:50%;" />
 
 4. 给healthBar添加slider组件，然后对slider进行设置（法2） 此处用的是silider
 
@@ -572,7 +572,7 @@ bug: 猫猫不能跳出画面
 
 + 增加空白帧：将时间轴移动到下一秒，点录制，然后隐藏该anim
 
-  <img src="E:\GameProject\SnowCat\Reports\reportsAsserts\space.png" alt="image-20231227010424783" style="zoom:50%;" />
+  <img src=".\reportsAsserts\space.png" alt="image-20231227010424783" style="zoom:50%;" />
 
 2. 因为字体比较糊，所以尝试使用textmeshpro插件
 
@@ -659,7 +659,7 @@ bug: 猫猫不能跳出画面
 
 ### 15. 设置UI
 
-<img src="E:\GameProject\SnowCat\Reports\reportsAsserts\settingUI.png" alt="image-20231227231513275" style="zoom:50%;" />
+<img src=".\reportsAsserts\settingUI.png" alt="image-20231227231513275" style="zoom:50%;" />
 
 
 
